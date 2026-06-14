@@ -84,27 +84,6 @@ const PrimaryButton = styled.a`
   }
 `;
 
-const SecondaryButton = styled.a`
-  background-color: transparent;
-  color: #5f8c5f;
-  padding: 16px 40px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  border: 2px solid #5f8c5f;
-  transition: all 0.3s ease;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #e7efe7;
-    transform: translateY(-2px);
-  }
-
-  @media (max-width: 768px) {
-    width: 100%;
-  }
-`;
 
 export default function Hero() {
   return (

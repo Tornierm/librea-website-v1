@@ -1,1 +1,11 @@
-'use client';\n\nimport React, { ReactNode } from 'react';\n\nexport default function StyledComponentsRegistry({\n  children,\n}: {\n  children: ReactNode;\n}) {\n  return <>{children}</>;\n}\n
+'use client';
+
+import React, { ReactNode } from 'react';
+
+export default function StyledComponentsRegistry({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  return <>{children}</>;
+}
