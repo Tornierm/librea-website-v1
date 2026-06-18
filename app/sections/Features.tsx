@@ -4,11 +4,11 @@ import styled from 'styled-components';
 
 const FeaturesContainer = styled.section`
   width: 100%;
-  padding: 100px 40px;
+  padding: 110px 48px;
   background-color: #fff;
 
   @media (max-width: 768px) {
-    padding: 60px 20px;
+    padding: 70px 20px;
   }
 `;
 
@@ -17,90 +17,141 @@ const Content = styled.div`
   margin: 0 auto;
 `;
 
-const Title = styled.h2`
-  font-size: 48px;
-  font-weight: 700;
-  color: #1a2123;
+const SectionHeader = styled.div`
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 72px;
 
   @media (max-width: 768px) {
-    font-size: 36px;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
+  }
+`;
+
+const SectionLabel = styled.p`
+  font-size: 13px;
+  font-weight: 700;
+  color: #2d6a2d;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+`;
+
+const Title = styled.h2`
+  font-size: 48px;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -1.5px;
+  margin-bottom: 16px;
+
+  @media (max-width: 768px) {
+    font-size: 34px;
+    letter-spacing: -0.5px;
+  }
+`;
+
+const SectionSubtitle = styled.p`
+  font-size: 18px;
+  color: #6b7280;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.6;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
   }
 `;
 
 const FeatureGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
 
-  @media (max-width: 768px) {
-    gap: 30px;
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 `;
 
 const FeatureCard = styled.div`
-  padding: 30px;
-  border-radius: 12px;
-  background-color: #f3f6f6;
-  transition: all 0.3s ease;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: #fafafa;
+  border: 1px solid #f0f0f0;
+  transition: all 0.25s ease;
 
   &:hover {
-    background-color: #e7efe7;
+    background-color: #fff;
+    border-color: #d4e8d4;
     transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(95, 140, 95, 0.15);
+    box-shadow: 0 12px 32px rgba(45, 106, 45, 0.1);
   }
 `;
 
-const Icon = styled.div`
-  font-size: 48px;
+const IconWrapper = styled.div<{ $color: string }>`
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background-color: ${({ $color }) => $color};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
   margin-bottom: 20px;
 `;
 
 const FeatureTitle = styled.h3`
-  font-size: 20px;
-  font-weight: 600;
-  color: #1a2123;
-  margin-bottom: 12px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+  letter-spacing: -0.2px;
 `;
 
 const FeatureDescription = styled.p`
-  font-size: 16px;
-  color: #57686b;
-  line-height: 1.6;
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.65;
 `;
 
 const features = [
   {
     icon: '📚',
-    title: 'Smart Learning',
-    description: 'AI-powered personalized learning paths tailored to your pace and style.',
+    color: '#e8f5e9',
+    title: 'Smart Learning Paths',
+    description: 'AI-powered curricula that adapt to your pace, knowledge gaps, and learning style.',
   },
   {
     icon: '⚡',
-    title: 'Quick Sessions',
-    description: 'Learn in bite-sized chunks. Perfect for busy schedules and on-the-go studying.',
+    color: '#fff8e1',
+    title: 'Bite-Sized Sessions',
+    description: 'Learn in focused 5–15 minute sessions built for busy schedules and retention.',
   },
   {
     icon: '📊',
-    title: 'Progress Tracking',
-    description: 'Track your progress with detailed analytics and insights on your learning journey.',
+    color: '#e3f2fd',
+    title: 'Progress Insights',
+    description: "Detailed analytics that show you exactly where you're improving and where to focus.",
   },
   {
     icon: '🎯',
+    color: '#fce4ec',
     title: 'Goal Setting',
-    description: 'Set ambitious goals and achieve them with our structured learning plans.',
+    description: 'Set ambitious targets and stay on track with structured plans and reminders.',
   },
   {
     icon: '👥',
-    title: 'Community',
-    description: 'Connect with other learners, share tips, and grow together.',
+    color: '#f3e5f5',
+    title: 'Learning Community',
+    description: 'Connect with other learners, share breakthroughs, and stay motivated together.',
   },
   {
     icon: '🏆',
+    color: '#fff3e0',
     title: 'Achievements',
-    description: 'Earn badges and rewards as you progress through your learning journey.',
+    description: 'Earn badges and streaks that reward consistency and celebrate milestones.',
   },
 ];
 
@@ -108,11 +159,17 @@ export default function Features() {
   return (
     <FeaturesContainer>
       <Content>
-        <Title>Why Choose Librea?</Title>
+        <SectionHeader>
+          <SectionLabel>Why Librea</SectionLabel>
+          <Title>Everything you need to learn</Title>
+          <SectionSubtitle>
+            A complete toolkit designed to make learning stick — from first session to mastery.
+          </SectionSubtitle>
+        </SectionHeader>
         <FeatureGrid>
           {features.map((feature, index) => (
             <FeatureCard key={index}>
-              <Icon>{feature.icon}</Icon>
+              <IconWrapper $color={feature.color}>{feature.icon}</IconWrapper>
               <FeatureTitle>{feature.title}</FeatureTitle>
               <FeatureDescription>{feature.description}</FeatureDescription>
             </FeatureCard>
