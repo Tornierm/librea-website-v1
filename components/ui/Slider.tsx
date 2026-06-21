@@ -5,7 +5,6 @@ import styled from 'styled-components';
 
 const GAP = 18;
 const CARD_WIDTH = 422;
-const PEEK = 40;
 
 /* ── Styles ── */
 
