@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import styled from 'styled-components';
 
 const Nav = styled.nav`
@@ -22,12 +23,10 @@ const Nav = styled.nav`
   }
 `;
 
-const Logo = styled.div`
-  font-size: 22px;
-  font-weight: 800;
-  color: #2d6a2d;
-  letter-spacing: -0.5px;
+const LogoWrapper = styled.div`
   cursor: pointer;
+  display: flex;
+  align-items: center;
 `;
 
 const NavLinks = styled.div`
@@ -79,7 +78,9 @@ const CTAButton = styled.a`
 export default function NavigationBar() {
   return (
     <Nav>
-      <Logo>Librea</Logo>
+      <LogoWrapper>
+        <Image src="/LibreaIcon.svg" alt="Librea" width={40} height={40} priority />
+      </LogoWrapper>
       <NavLinks>
         <Link href="#home">Home</Link>
         <Link href="#features">Features</Link>

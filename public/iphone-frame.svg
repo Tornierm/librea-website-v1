@@ -1,0 +1,40 @@
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer body -->
+  <rect x="1.5" y="1.5" width="387" height="841" rx="54" fill="#2a2a2c" stroke="url(#outerGrad)" stroke-width="3"/>
+
+  <!-- Inner screen bezel -->
+  <rect x="10" y="10" width="370" height="824" rx="46" fill="#111"/>
+
+  <!-- Screen area (transparent) -->
+  <rect x="14" y="14" width="362" height="816" rx="42" fill="transparent"/>
+
+  <!-- Subtle inner shine -->
+  <rect x="10" y="10" width="370" height="824" rx="46" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+
+  <!-- Dynamic Island -->
+  <rect x="130" y="18" width="130" height="36" rx="18" fill="#000"/>
+
+  <!-- Side buttons: volume up -->
+  <rect x="-2" y="160" width="4" height="56" rx="2" fill="url(#btnGrad)"/>
+  <!-- volume down -->
+  <rect x="-2" y="228" width="4" height="56" rx="2" fill="url(#btnGrad)"/>
+  <!-- power -->
+  <rect x="388" y="190" width="4" height="80" rx="2" fill="url(#btnGrad)"/>
+
+  <!-- Bottom home indicator -->
+  <rect x="155" y="820" width="80" height="5" rx="2.5" fill="rgba(255,255,255,0.25)"/>
+
+  <defs>
+    <linearGradient id="outerGrad" x1="0" y1="0" x2="390" y2="844" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8a8a8e"/>
+      <stop offset="25%" stop-color="#48484a"/>
+      <stop offset="50%" stop-color="#6c6c70"/>
+      <stop offset="75%" stop-color="#3a3a3c"/>
+      <stop offset="100%" stop-color="#8a8a8e"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#8a8a8e"/>
+      <stop offset="100%" stop-color="#48484a"/>
+    </linearGradient>
+  </defs>
+</svg>

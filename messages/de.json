@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "features": "Features",
+    "testimonials": "Reviews",
+    "blog": "Blog",
+    "download": "Download",
+    "cta": "App laden"
+  },
+  "meta": {
+    "title": "Librea - Mehr lesen, weniger zahlen",
+    "description": "Der Gebrauchtbuch-Marktplatz für Leser, die günstiger kaufen und leicht verkaufen wollen."
+  },
+  "howItWorks": {
+    "eyebrow": "So funktioniert's",
+    "step1_label": "Buch finden",
+    "step1_heading": "Inserate in deiner Nähe durchstöbern",
+    "step1_description": "Suche nach Titel, Autor oder Genre und finde Bücher gleich um die Ecke.",
+    "step2_label": "Lokal treffen",
+    "step2_heading": "Treffpunkt vereinbaren, kein Versand",
+    "step2_description": "Schreib dem Verkäufer und wählt einen Treffpunkt. Kein Verpacken, kein Warten.",
+    "step3_label": "Weniger zahlen",
+    "step3_heading": "Gebrauchtpreise, glückliches Portemonnaie",
+    "step3_description": "Hol dir die Bücher, die du liebst, zum Bruchteil des Preises. Alle gewinnen."
+  },
+  "claim": {
+    "eyebrow": "Besser lesen",
+    "heading": "Der einfachste Weg, Bücher in deiner Nachbarschaft zu kaufen und zu verkaufen.",
+    "description": "Kein Versand, kein Aufwand. Ein Buch in Sekunden einstellen, eines um die Ecke finden. Librea macht lokalen Buchhandel so einfach wie er sein sollte."
+  },
+  "blog": {
+    "eyebrow": "Aus dem Blog",
+    "heading": "Geschichten für Leser.",
+    "seeAll": "Alle Beiträge",
+    "readMore": "Weiterlesen"
+  },
+  "footer": {
+    "tagline": "Der Gebrauchtbuch-Marktplatz für Leser, die günstiger kaufen und leicht verkaufen wollen.",
+    "emailLabel": "Bleib auf dem Laufenden",
+    "emailSub": "Erhalte Updates zu neuen Funktionen und Launches.",
+    "emailPlaceholder": "deine@email.com",
+    "emailCta": "Benachrichtigen",
+    "emailThanks": "Du stehst auf der Liste. Wir melden uns!",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "contact": "Kontakt",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "cta": {
+    "heading": "Dein nächstes Buch wartet.",
+    "description": "Lade Librea herunter und finde Gebrauchtbücher in deiner Nachbarschaft.",
+    "ios": "Im App Store laden",
+    "android": "Demnächst auf Google Play"
+  },
+  "testimonials": {
+    "eyebrow": "Was Leser sagen",
+    "heading": "Echte Menschen, echte Bücher.",
+    "q1": "Ich habe drei Bücher in einer Woche verkauft und zwei weitere für fast nichts gekauft. Das Treffen war fünf Minuten von meiner Tür.",
+    "n1": "Laura M.",
+    "m1": "4 Bücher auf Librea gekauft",
+    "q2": "Endlich ein Marktplatz, der für Bücher Sinn macht. Keine Versandkosten, kein Warten — nur Menschen, die teilen, was sie lieben.",
+    "n2": "Jonas R.",
+    "m2": "7 Bücher auf Librea verkauft",
+    "q3": "Ich habe ein Buch gefunden, das ich seit Monaten gesucht habe — einen halben Kilometer entfernt. Diese App ist magisch.",
+    "n3": "Sophie K.",
+    "m3": "Librea-Nutzerin seit Beta",
+    "q4": "Meine alten Uni-Bücher in Minuten eingestellt und noch am selben Tag verkauft. Unglaublich einfach.",
+    "n4": "Anna M.",
+    "m4": "12 Bücher auf Librea verkauft"
+  },
+  "features": {
+    "eyebrow": "Für Leser gemacht",
+    "heading": "Alles, was du brauchst,\nnichts, was du nicht brauchst.",
+    "description": "Librea macht den Kauf und Verkauf von Gebrauchtbüchern in deiner Nachbarschaft mühelos.",
+    "f1_title": "In der Nähe stöbern",
+    "f1_desc": "Finde Inserate um die Ecke, nicht quer durchs Land.",
+    "f2_title": "Direkt schreiben",
+    "f2_desc": "Schreib Verkäufern und vereinbare ein Treffen in Sekunden.",
+    "f3_title": "Preis selbst festlegen",
+    "f3_desc": "Buch in unter einer Minute einstellen — du bestimmst den Preis.",
+    "f4_title": "Bewertungen",
+    "f4_desc": "Bewertungen für Bücher und Verkäufer, damit du sicher kaufst."
+  },
+  "hero": {
+    "eyebrow": "Der Bücher-Marktplatz",
+    "heading": "Mehr lesen,\nweniger zahlen",
+    "description": "Librea verbindet Leser, die ihre Bücher weitergeben möchten, mit denen, die günstig lesen wollen. Gebraucht kaufen, einfach verkaufen — eine Community, die die Liebe zum Lesen teilt.",
+    "cta_ios": "Im App Store laden",
+    "cta_android": "Android — Demnächst"
+  }
+}

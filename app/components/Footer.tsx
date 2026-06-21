@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { LibreaLogo } from '@/components/ui/LibreaLogo';
 
 const FooterContainer = styled.footer`
   width: 100%;
@@ -38,11 +39,9 @@ const Brand = styled.div`
   max-width: 260px;
 `;
 
-const Logo = styled.div`
-  font-size: 20px;
-  font-weight: 800;
-  color: white;
-  letter-spacing: -0.5px;
+const LogoWrapper = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 const Tagline = styled.p`
@@ -122,7 +121,9 @@ export default function Footer() {
       <Content>
         <TopRow>
           <Brand>
-            <Logo>Librea</Logo>
+            <LogoWrapper>
+              <LibreaLogo color="#F9F8F0" height={20} />
+            </LogoWrapper>
             <Tagline>Your personal learning companion. Learn smarter, every day.</Tagline>
           </Brand>
           <FooterGrid>
