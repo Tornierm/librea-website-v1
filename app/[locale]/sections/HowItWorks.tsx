@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import styled, { keyframes, css } from 'styled-components';
+import styled, { css } from 'styled-components';
 import { useTranslations } from 'next-intl';
 import { eyebrow, headingMd, bodyMd } from '@/components/ui/typography';
 
