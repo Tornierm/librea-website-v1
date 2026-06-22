@@ -7,11 +7,11 @@ import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import { Slider } from '@/components/ui/Slider';
 import { eyebrow, headingMd, TextBlock, Section as BaseSection } from '@/components/ui/typography';
+import { posts } from '@/lib/posts';
 
 const Section = styled(BaseSection)`
   overflow: hidden;
 `;
-import { posts } from '@/lib/posts';
 
 /* ── Layout ── */
 
