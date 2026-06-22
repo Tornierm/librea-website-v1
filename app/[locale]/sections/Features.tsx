@@ -2,47 +2,71 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import styled, { css, keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { useTranslations } from 'next-intl';
 import { eyebrow, headingMd, bodyMd, TextBlock, Section } from '@/components/ui/typography';
 
 const INTERVAL = 8000;
 
-const features = [
-  {
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-        <circle cx="12" cy="9" r="2.5"/>
-      </svg>
-    ),
-    screen: '/app-screen-map.png',
-  },
-  {
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-      </svg>
-    ),
-    screen: '/app-screen-2.png',
-  },
-  {
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
-        <line x1="7" y1="7" x2="7.01" y2="7"/>
-      </svg>
-    ),
-    screen: '/app-screen-1.png',
-  },
-  {
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-      </svg>
-    ),
-    screen: '/app-screen-3.png',
-  },
+/* ── Screen layer definitions ──────────────────────────────────────────────
+   z-index stack (bottom → top): home, map, profile, createBook
+   home    — always visible, never moves
+   map     — snaps to position, revealed when profile exits right
+   profile — snaps in (covered by createBook), exits right on feature 3
+   createBook — slides in from bottom on feature 1, exits down otherwise
+*/
+
+type ScreenKey = 'home' | 'map' | 'profile' | 'createBook';
+
+const SCREENS: { key: ScreenKey; src: string; zIndex: number }[] = [
+  { key: 'home',       src: '/home.PNG',            zIndex: 1 },
+  { key: 'map',        src: '/app-screen-map.png',  zIndex: 2 },
+  { key: 'profile',    src: '/create_book.PNG',      zIndex: 3 },
+  { key: 'createBook', src: '/scanning.PNG',         zIndex: 4 },
+];
+
+function getScreenTransform(key: ScreenKey, active: number): string {
+  switch (key) {
+    case 'home': return 'translate(0, 0)';
+    case 'map':  return active >= 2 ? 'translate(0, 0)' : 'translate(0, 100%)';
+    case 'profile':
+      if (active === 0) return 'translate(0, 100%)';
+      if (active >= 3)  return 'translate(100%, 0)';
+      return 'translate(0, 0)';
+    case 'createBook':
+      return active === 1 ? 'translate(0, 0)' : 'translate(0, 100%)';
+  }
+}
+
+function getScreenTransition(key: ScreenKey, active: number): string {
+  if (key === 'home' || key === 'map') return 'none';
+  if (key === 'profile' && active <= 1) return 'none';
+  return 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+}
+
+/* ── Icons ── */
+
+const icons = [
+  // Home — people / social
+  <svg key="home" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+  </svg>,
+  // Create — scan / plus
+  <svg key="create" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="2" width="7" height="7" rx="1"/><rect x="15" y="2" width="7" height="7" rx="1"/>
+    <rect x="2" y="15" width="7" height="7" rx="1"/>
+    <path d="M15 15h2v2h-2z"/><path d="M19 15h2v2h-2z"/><path d="M15 19h2v2h-2z"/><path d="M19 19h2v2h-2z"/>
+  </svg>,
+  // Profile — user / book
+  <svg key="profile" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+  </svg>,
+  // Map — location
+  <svg key="map" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+    <circle cx="12" cy="9" r="2.5"/>
+  </svg>,
 ];
 
 /* ── Layout ── */
@@ -96,7 +120,7 @@ const Eyebrow = styled.p`${eyebrow}`;
 const Heading = styled.h2`${headingMd} margin-bottom: 16px;`;
 const Subheading = styled.p`${bodyMd} max-width: 40ch;`;
 
-/* ── Feature boxes — desktop ── */
+/* ── Feature boxes ── */
 
 const FeatureGrid = styled.div`
   display: none;
@@ -150,7 +174,7 @@ const FeatureDesc = styled.p`
   color: var(--text-muted);
 `;
 
-/* ── Mobile slideshow controls ── */
+/* ── Mobile controls ── */
 
 const MobileControls = styled.div`
   display: flex;
@@ -160,8 +184,6 @@ const MobileControls = styled.div`
   padding: 0 24px;
   @media (min-width: 768px) { display: none; }
 `;
-
-/* Dots are always in the PhoneCol, MobileControls only shows the active card on mobile */
 
 const Dots = styled.div`
   display: flex;
@@ -202,54 +224,6 @@ const DotFill = styled.div<{ $duration: number }>`
   }
 `;
 
-/* ── Phone ── */
-
-const PhoneWrap = styled.div`
-  position: relative;
-  width: 220px;
-`;
-
-const FrameImg = styled.img`
-  display: block;
-  width: 100%;
-  height: auto;
-  position: relative;
-  z-index: 1;
-  pointer-events: none;
-`;
-
-const ScreenViewport = styled.div`
-  position: absolute;
-  left: 4.40%;
-  top: 1.88%;
-  width: 91.12%;
-  height: 96.24%;
-  overflow: hidden;
-  z-index: 0;
-  clip-path: inset(0 round 13% / 6%);
-`;
-
-type SlideDir = 'right' | 'bottom' | 'left' | 'top';
-
-const SLIDE_DIRS: SlideDir[] = ['right', 'bottom', 'left', 'top'];
-
-const fromRight  = keyframes`from { transform: translateX(100%); } to { transform: translate(0,0); }`;
-const fromBottom = keyframes`from { transform: translateY(100%); } to { transform: translate(0,0); }`;
-const fromLeft   = keyframes`from { transform: translateX(-100%); } to { transform: translate(0,0); }`;
-const fromTop    = keyframes`from { transform: translateY(-100%); } to { transform: translate(0,0); }`;
-
-const dirToAnim: Record<SlideDir, ReturnType<typeof keyframes>> = {
-  right: fromRight, bottom: fromBottom, left: fromLeft, top: fromTop,
-};
-
-const ScreenAnim = styled.div<{ $from: SlideDir; $animate: boolean }>`
-  position: absolute;
-  inset: 0;
-  ${({ $from, $animate }) => $animate && css`
-    animation: ${dirToAnim[$from]} 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  `}
-`;
-
 /* ── Progress bar ── */
 
 const ProgressBar = styled.div`
@@ -273,12 +247,46 @@ const ProgressFill = styled.div<{ $duration: number }>`
   }
 `;
 
+/* ── Phone ── */
+
+const PhoneWrap = styled.div`
+  position: relative;
+  width: 220px;
+`;
+
+const FrameImg = styled.img`
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 5;
+  pointer-events: none;
+`;
+
+const ScreenViewport = styled.div`
+  position: absolute;
+  left: 4.40%;
+  top: 1.88%;
+  width: 91.12%;
+  height: 96.24%;
+  overflow: hidden;
+  clip-path: inset(0 round 13% / 6%);
+`;
+
+const ScreenLayer = styled.div<{ $zIndex: number; $transform: string; $transition: string }>`
+  position: absolute;
+  inset: 0;
+  z-index: ${({ $zIndex }) => $zIndex};
+  transform: ${({ $transform }) => $transform};
+  transition: ${({ $transition }) => $transition};
+  will-change: transform;
+`;
+
 /* ── Component ── */
 
 export function Features() {
   const t = useTranslations('features');
   const [active, setActive] = useState(0);
-  const [prev, setPrev] = useState<number | null>(null);
   const [progressKey, setProgressKey] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -292,8 +300,8 @@ export function Features() {
   const startTimer = () => {
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
-      setActive((cur) => { setPrev(cur); return (cur + 1) % features.length; });
-      setProgressKey((k) => k + 1);
+      setActive(cur => (cur + 1) % 4);
+      setProgressKey(k => k + 1);
     }, INTERVAL);
   };
 
@@ -303,9 +311,8 @@ export function Features() {
   }, []);
 
   const handleClick = (i: number) => {
-    setPrev(active);
     setActive(i);
-    setProgressKey((k) => k + 1);
+    setProgressKey(k => k + 1);
     startTimer();
   };
 
@@ -323,29 +330,21 @@ export function Features() {
         <PhoneCol>
           <PhoneWrap>
             <ScreenViewport>
-              {prev !== null && (
-                <ScreenAnim
-                  key={`prev-${prev}-${progressKey}`}
-                  $from={SLIDE_DIRS[prev]}
-                  $animate={false}
-                  style={{ zIndex: 0 }}
+              {SCREENS.map(({ key, src, zIndex }) => (
+                <ScreenLayer
+                  key={key}
+                  $zIndex={zIndex}
+                  $transform={getScreenTransform(key, active)}
+                  $transition={getScreenTransition(key, active)}
                 >
-                  <Image src={features[prev].screen} alt="" fill sizes="220px" style={{ objectFit: 'cover' }} draggable={false} />
-                </ScreenAnim>
-              )}
-              <ScreenAnim
-                key={`${active}-${progressKey}`}
-                $from={SLIDE_DIRS[active]}
-                $animate={true}
-                style={{ zIndex: 1 }}
-              >
-                <Image src={features[active].screen} alt={`App screen ${active + 1}`} fill sizes="220px" style={{ objectFit: 'cover' }} draggable={false} />
-              </ScreenAnim>
+                  <Image src={src} alt="" fill sizes="220px" style={{ objectFit: 'cover' }} draggable={false} priority={key === 'home'} />
+                </ScreenLayer>
+              ))}
             </ScreenViewport>
             <FrameImg src="/iphone-15-pro-frame.svg" alt="iPhone frame" width={1294} height={2656} />
           </PhoneWrap>
           <Dots>
-            {features.map((_, i) => (
+            {featureData.map((_, i) => (
               <Dot key={i} $active={i === active} onClick={() => handleClick(i)} aria-label={`Go to feature ${i + 1}`}>
                 <DotTrack $active={i === active}>
                   {i === active && <DotFill key={progressKey} $duration={INTERVAL} />}
@@ -356,25 +355,23 @@ export function Features() {
         </PhoneCol>
 
         <CardsCol>
-          {/* mobile: full active card */}
           <MobileControls>
             <FeatureBox $active style={{ width: '100%', boxSizing: 'border-box' }} onClick={() => handleClick(active)} aria-label={`Feature ${active + 1}`}>
-              <FeatureIcon $active>{features[active].icon}</FeatureIcon>
+              <FeatureIcon $active>{icons[active]}</FeatureIcon>
               <FeatureTitle $active>{t(featureData[active].titleKey)}</FeatureTitle>
               <FeatureDesc>{t(featureData[active].descKey)}</FeatureDesc>
               <ProgressBar><ProgressFill key={progressKey} $duration={INTERVAL} /></ProgressBar>
             </FeatureBox>
           </MobileControls>
 
-          {/* desktop: 2×2 grid */}
           <FeatureGrid>
-            {features.map(({ icon }, i) => {
+            {featureData.map(({ titleKey, descKey }, i) => {
               const isActive = i === active;
               return (
                 <FeatureBox key={i} $active={isActive} onClick={() => handleClick(i)} aria-label={`Feature ${i + 1}`}>
-                  <FeatureIcon $active={isActive}>{icon}</FeatureIcon>
-                  <FeatureTitle $active={isActive}>{t(featureData[i].titleKey)}</FeatureTitle>
-                  <FeatureDesc>{t(featureData[i].descKey)}</FeatureDesc>
+                  <FeatureIcon $active={isActive}>{icons[i]}</FeatureIcon>
+                  <FeatureTitle $active={isActive}>{t(titleKey)}</FeatureTitle>
+                  <FeatureDesc>{t(descKey)}</FeatureDesc>
                   {isActive && <ProgressBar><ProgressFill key={progressKey} $duration={INTERVAL} /></ProgressBar>}
                 </FeatureBox>
               );

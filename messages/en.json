@@ -1,7 +1,7 @@
 {
   "nav": {
-    "features": "Features",
-    "testimonials": "Reviews",
+    "features": "How it works",
+    "testimonials": "What people think",
     "blog": "Blog",
     "download": "Download",
     "cta": "Get the App"
@@ -71,14 +71,14 @@
     "eyebrow": "Built for readers",
     "heading": "Everything you need,\nnothing you don't.",
     "description": "Librea is designed to make buying and selling second-hand books in your neighbourhood effortless.",
-    "f1_title": "Browse nearby",
-    "f1_desc": "Find listings around the corner, not across the country.",
-    "f2_title": "Chat directly",
-    "f2_desc": "Message sellers and agree on a meetup in seconds.",
-    "f3_title": "Set your price",
-    "f3_desc": "List a book in under a minute — you choose the price.",
-    "f4_title": "Trusted reviews",
-    "f4_desc": "Ratings on every book and seller so you buy with confidence."
+    "f1_title": "Home",
+    "f1_desc": "Connect with friends about the books you love.",
+    "f2_title": "Create Book",
+    "f2_desc": "Insert your books with one click.",
+    "f3_title": "Profile",
+    "f3_desc": "Share your old books with people in your neighborhood.",
+    "f4_title": "Map",
+    "f4_desc": "Discover booklovers in your area."
   },
   "hero": {
     "eyebrow": "The book marketplace",

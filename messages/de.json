@@ -1,7 +1,7 @@
 {
   "nav": {
-    "features": "Features",
-    "testimonials": "Reviews",
+    "features": "Wie es funktioniert",
+    "testimonials": "Was andere sagen",
     "blog": "Blog",
     "download": "Download",
     "cta": "App laden"
@@ -71,14 +71,14 @@
     "eyebrow": "Für Leser gemacht",
     "heading": "Alles, was du brauchst,\nnichts, was du nicht brauchst.",
     "description": "Librea macht den Kauf und Verkauf von Gebrauchtbüchern in deiner Nachbarschaft mühelos.",
-    "f1_title": "In der Nähe stöbern",
-    "f1_desc": "Finde Inserate um die Ecke, nicht quer durchs Land.",
-    "f2_title": "Direkt schreiben",
-    "f2_desc": "Schreib Verkäufern und vereinbare ein Treffen in Sekunden.",
-    "f3_title": "Preis selbst festlegen",
-    "f3_desc": "Buch in unter einer Minute einstellen — du bestimmst den Preis.",
-    "f4_title": "Bewertungen",
-    "f4_desc": "Bewertungen für Bücher und Verkäufer, damit du sicher kaufst."
+    "f1_title": "Startseite",
+    "f1_desc": "Tausch dich mit Freunden über deine Lieblingsbücher aus.",
+    "f2_title": "Buch hinzufügen",
+    "f2_desc": "Füge deine Bücher mit einem Klick hinzu.",
+    "f3_title": "Profil",
+    "f3_desc": "Teile deine alten Bücher mit Menschen in deiner Nähe.",
+    "f4_title": "Karte",
+    "f4_desc": "Entdecke Bücherfans in deiner Umgebung."
   },
   "hero": {
     "eyebrow": "Der Bücher-Marktplatz",

@@ -14,7 +14,11 @@ const Root = styled.div`
 
 const TrackWrap = styled.div`
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
+
+  @media (min-width: 768px) {
+    overflow: hidden;
+  }
 `;
 
 const Track = styled.div<{ $offset: number }>`
