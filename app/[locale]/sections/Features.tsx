@@ -320,6 +320,17 @@ export function Features() {
     startTimer();
   };
 
+  const touchStartX = useRef(0);
+  const handleTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; };
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    const dx = e.changedTouches[0].clientX - touchStartX.current;
+    if (Math.abs(dx) < 40) return;
+    const next = dx < 0
+      ? Math.min(active + 1, featureData.length - 1)
+      : Math.max(active - 1, 0);
+    handleClick(next);
+  };
+
   return (
     <Section id="features">
       <Grid>
@@ -332,7 +343,7 @@ export function Features() {
         </TextCol>
 
         <PhoneCol>
-          <PhoneWrap>
+          <PhoneWrap onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
             <ScreenViewport>
               {SCREENS.map(({ key, src, zIndex }) => (
                 <ScreenLayer
