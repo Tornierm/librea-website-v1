@@ -19,10 +19,10 @@ const INTERVAL = 8000;
 type ScreenKey = 'home' | 'map' | 'profile' | 'createBook';
 
 const SCREENS: { key: ScreenKey; src: string; zIndex: number }[] = [
-  { key: 'home',       src: '/home.PNG',            zIndex: 1 },
-  { key: 'map',        src: '/app-screen-map.png',  zIndex: 2 },
-  { key: 'profile',    src: '/create_book.PNG',      zIndex: 3 },
-  { key: 'createBook', src: '/scanning.PNG',         zIndex: 4 },
+  { key: 'home',       src: '/home.PNG',                zIndex: 1 },
+  { key: 'map',        src: '/app-screen-profile.png',  zIndex: 2 },
+  { key: 'profile',    src: '/create_book.PNG',         zIndex: 3 },
+  { key: 'createBook', src: '/scanning.PNG',            zIndex: 4 },
 ];
 
 function getScreenTransform(key: ScreenKey, active: number): string {
@@ -30,8 +30,8 @@ function getScreenTransform(key: ScreenKey, active: number): string {
     case 'home': return 'translate(0, 0)';
     case 'map':  return active >= 2 ? 'translate(0, 0)' : 'translate(0, 100%)';
     case 'profile':
-      if (active === 0) return 'translate(0, 100%)';
-      if (active >= 3)  return 'translate(100%, 0)';
+      if (active <= 1) return 'translate(0, 100%)'; // stay hidden until feature 2
+      if (active >= 3) return 'translate(100%, 0)';
       return 'translate(0, 0)';
     case 'createBook':
       return active === 1 ? 'translate(0, 0)' : 'translate(0, 100%)';
@@ -39,8 +39,12 @@ function getScreenTransform(key: ScreenKey, active: number): string {
 }
 
 function getScreenTransition(key: ScreenKey, active: number): string {
+  // Home and Map never animate themselves
   if (key === 'home' || key === 'map') return 'none';
-  if (key === 'profile' && active <= 1) return 'none';
+  // Profile: snap into place for features 0-2 (revealed by CreateBook exiting),
+  // only animate when exiting to right on feature 3
+  if (key === 'profile') return active === 3 ? 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)' : 'none';
+  // CreateBook: always animate
   return 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
 }
 

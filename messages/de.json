@@ -71,14 +71,14 @@
     "eyebrow": "Für Leser gemacht",
     "heading": "Alles, was du brauchst,\nnichts, was du nicht brauchst.",
     "description": "Librea macht den Kauf und Verkauf von Gebrauchtbüchern in deiner Nachbarschaft mühelos.",
-    "f1_title": "Startseite",
-    "f1_desc": "Tausch dich mit Freunden über deine Lieblingsbücher aus.",
-    "f2_title": "Buch hinzufügen",
-    "f2_desc": "Füge deine Bücher mit einem Klick hinzu.",
-    "f3_title": "Profil",
-    "f3_desc": "Teile deine alten Bücher mit Menschen in deiner Nähe.",
-    "f4_title": "Karte",
-    "f4_desc": "Entdecke Bücherfans in deiner Umgebung."
+    "f1_title": "Entdecke Bücher und Leser in deiner Nähe.",
+    "f1_desc": "Sieh, was Menschen in deiner Umgebung gerade lesen, und verbindet euch über gemeinsame Vorlieben.",
+    "f2_title": "Bücher in Sekunden scannen.",
+    "f2_desc": "Kamera auf den Barcode richten — fertig. Kein Tippen nötig.",
+    "f3_title": "Liken. Teilen.",
+    "f3_desc": "Speichere Bücher, die du liebst, und biete die an, die bei dir nur Staub sammeln.",
+    "f4_title": "Teile deine Bücher mit Freunden und Nachbarn.",
+    "f4_desc": "Dein Regal wird zu einer kleinen Bibliothek für alle in deiner Umgebung."
   },
   "hero": {
     "eyebrow": "Der Bücher-Marktplatz",
@@ -86,5 +86,10 @@
     "description": "Librea verbindet Leser, die ihre Bücher weitergeben möchten, mit denen, die günstig lesen wollen. Gebraucht kaufen, einfach verkaufen — eine Community, die die Liebe zum Lesen teilt.",
     "cta_ios": "Im App Store laden",
     "cta_android": "Android — Demnächst"
+  },
+  "signupConfirmation": {
+    "heading": "Deine E-Mail wurde bestätigt.",
+    "body": "Willkommen bei Librea. Lade die App herunter und fang an, Bücher mit Menschen in deiner Nähe zu teilen.",
+    "back": "Zurück zur Startseite"
   }
 }

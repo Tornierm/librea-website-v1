@@ -71,14 +71,14 @@
     "eyebrow": "Built for readers",
     "heading": "Everything you need,\nnothing you don't.",
     "description": "Librea is designed to make buying and selling second-hand books in your neighbourhood effortless.",
-    "f1_title": "Home",
-    "f1_desc": "Connect with friends about the books you love.",
-    "f2_title": "Create Book",
-    "f2_desc": "Insert your books with one click.",
-    "f3_title": "Profile",
-    "f3_desc": "Share your old books with people in your neighborhood.",
-    "f4_title": "Map",
-    "f4_desc": "Discover booklovers in your area."
+    "f1_title": "Discover books and readers in your area.",
+    "f1_desc": "Browse what people nearby are reading and connect over shared taste.",
+    "f2_title": "Scan books in seconds.",
+    "f2_desc": "Point your camera at the barcode and it's listed instantly — no typing needed.",
+    "f3_title": "Like them. Share them.",
+    "f3_desc": "Save the books you love and offer the ones gathering dust on your shelf.",
+    "f4_title": "Share your books with friends and locals.",
+    "f4_desc": "Your shelf becomes a little library for everyone around you."
   },
   "hero": {
     "eyebrow": "The book marketplace",
@@ -86,5 +86,10 @@
     "description": "Librea connects readers who want to pass on their books with those who want to get them cheap. Buy second-hand, sell with ease — a community built around the love of reading.",
     "cta_ios": "Download on the App Store",
     "cta_android": "Android — Coming Soon"
+  },
+  "signupConfirmation": {
+    "heading": "Your email is confirmed.",
+    "body": "Welcome to Librea. Download the app and start sharing books with people around you.",
+    "back": "Back to homepage"
   }
 }
