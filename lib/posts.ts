@@ -62,7 +62,7 @@ Backlist titles are thriving. More than half of all books sold today aren't new 
 The old assumption was that attention spans were shrinking and books were losing the fight against feeds. The data says otherwise. Young readers haven't given up on books — they've just changed how they find them, talk about them, and consume them. Recommendation-driven discovery, audio formats, and community-based reading are replacing the old top-down model of publishing.
 
 If young readers are rediscovering books through community and recommendation rather than bookstore displays, the next logical step is making that discovery social and local. That's exactly what Librea is built for — a place to find your next read through the people around you, not an algorithm.`,
-    image: '/devoted%20reading%20activates%20slow%20thinking.png',
+    image: '/pexels-pixabay-256431.jpg',
   },
   {
     slug: 'paper-industry-environment',
