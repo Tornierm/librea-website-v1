@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { useTranslations } from 'next-intl';
 import { headingDisplay, bodyLg, Section as BaseSection } from '@/components/ui/typography';
-import { StoreButtons } from '@/components/ui/StoreButtons';
+import { WaitlistCTA } from '@/components/ui/WaitlistCTA';
 
 const Section = styled(BaseSection)`
   text-align: center;
@@ -20,11 +20,6 @@ const Inner = styled.div`
 const Heading = styled.h2`${headingDisplay}`;
 const Sub = styled.p`${bodyLg} max-width: 38ch;`;
 
-const ButtonsWrap = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
 export function CTA() {
   const t = useTranslations('cta');
 
@@ -33,9 +28,7 @@ export function CTA() {
       <Inner>
         <Heading>{t('heading')}</Heading>
         <Sub>{t('description')}</Sub>
-        <ButtonsWrap>
-          <StoreButtons />
-        </ButtonsWrap>
+        <WaitlistCTA />
       </Inner>
     </Section>
   );

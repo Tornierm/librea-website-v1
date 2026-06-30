@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import { useTranslations } from 'next-intl';
 import { LibreaLogo } from '@/components/ui/LibreaLogo';
-import { StoreButtons } from '@/components/ui/StoreButtons';
+import { WaitlistCTA } from '@/components/ui/WaitlistCTA';
 
 const FooterEl = styled.footer`
   border-top: 1px solid var(--border);
@@ -14,16 +14,20 @@ const Inner = styled.div`
   margin: 0 auto;
   max-width: 1350px;
   padding: 0 var(--layout-pad);
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
 `;
 
 const Left = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding: 0 24px;
+  gap: 16px;
 `;
 
 const Tagline = styled.p`
@@ -31,6 +35,26 @@ const Tagline = styled.p`
   line-height: 1.6;
   color: var(--text-muted);
   max-width: 36ch;
+  margin: 0;
+`;
+
+const Right = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+
+const EmailLabel = styled.p`
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+`;
+
+const EmailSub = styled.p`
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0 0 8px;
 `;
 
 const Bottom = styled.div`
@@ -78,8 +102,10 @@ export function Footer() {
         <Left>
           <LibreaLogo color="var(--brand)" height={28} />
           <Tagline>{t('tagline')}</Tagline>
-          <StoreButtons />
         </Left>
+        <Right>
+          <WaitlistCTA />
+        </Right>
       </Inner>
 
       <Bottom>

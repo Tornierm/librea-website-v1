@@ -91,5 +91,16 @@
     "heading": "Your email is confirmed.",
     "body": "Welcome to Librea. Download the app and start sharing books with people around you.",
     "back": "Back to homepage"
+  },
+  "waitlist": {
+    "placeholder": "name@email.com",
+    "cta": "Join the waitlist",
+    "error": "Something went wrong. Please try again.",
+    "invalid": "Please enter a valid email address.",
+    "thanks": "You're on the list. We'll be in touch!"
+  },
+  "modal": {
+    "heading": "We're launching soon.",
+    "body": "Join the waitlist and be among the first community members of the future largest library in the world."
   }
 }

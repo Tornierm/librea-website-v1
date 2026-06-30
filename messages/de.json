@@ -91,5 +91,16 @@
     "heading": "Deine E-Mail wurde bestätigt.",
     "body": "Willkommen bei Librea. Lade die App herunter und fang an, Bücher mit Menschen in deiner Nähe zu teilen.",
     "back": "Zurück zur Startseite"
+  },
+  "waitlist": {
+    "placeholder": "name@email.com",
+    "cta": "Zur Warteliste anmelden",
+    "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "invalid": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "thanks": "Du stehst auf der Liste. Wir melden uns!"
+  },
+  "modal": {
+    "heading": "Wir starten bald.",
+    "body": "Trag dich in die Warteliste ein und sei eines der ersten Mitglieder der zukünftig größten Bibliothek der Welt."
   }
 }

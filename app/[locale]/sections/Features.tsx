@@ -1,12 +1,12 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import styled from 'styled-components';
 import { useTranslations } from 'next-intl';
 import { eyebrow, headingMd, bodyMd, TextBlock, Section } from '@/components/ui/typography';
 
-const INTERVAL = 8000;
+const INTERVAL = 5000;
 
 /* ── Screen layer definitions ──────────────────────────────────────────────
    z-index stack (bottom → top): home, map, profile, createBook
@@ -291,8 +291,8 @@ const ScreenLayer = styled.div<{ $zIndex: number; $transform: string; $transitio
 export function Features() {
   const t = useTranslations('features');
   const [active, setActive] = useState(0);
-  const [progressKey, setProgressKey] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   const featureData = [
     { titleKey: 'f1_title', descKey: 'f1_desc' },
@@ -301,27 +301,44 @@ export function Features() {
     { titleKey: 'f4_title', descKey: 'f4_desc' },
   ];
 
-  const startTimer = () => {
+  const stopTimer = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
+  }, []);
+
+  const startTimer = useCallback(() => {
+    stopTimer();
     timerRef.current = setInterval(() => {
       setActive(cur => (cur + 1) % 4);
-      setProgressKey(k => k + 1);
     }, INTERVAL);
-  };
+  }, [stopTimer]);
 
   useEffect(() => {
-    startTimer();
-    return () => { if (timerRef.current) clearInterval(timerRef.current); };
-  }, []);
+    const el = sectionRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setActive(0);
+          startTimer();
+        } else {
+          stopTimer();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(el);
+    return () => { observer.disconnect(); stopTimer(); };
+  }, [startTimer, stopTimer]);
 
   const handleClick = (i: number) => {
     setActive(i);
-    setProgressKey(k => k + 1);
     startTimer();
   };
 
   return (
-    <Section id="features">
+    <Section id="features" ref={sectionRef}>
       <Grid>
         <TextCol>
           <TextBlock>
@@ -351,7 +368,7 @@ export function Features() {
             {featureData.map((_, i) => (
               <Dot key={i} $active={i === active} onClick={() => handleClick(i)} aria-label={`Go to feature ${i + 1}`}>
                 <DotTrack $active={i === active}>
-                  {i === active && <DotFill key={progressKey} $duration={INTERVAL} />}
+                  {i === active && <DotFill key={active} $duration={INTERVAL} />}
                 </DotTrack>
               </Dot>
             ))}
@@ -364,7 +381,7 @@ export function Features() {
               <FeatureIcon $active>{icons[active]}</FeatureIcon>
               <FeatureTitle $active>{t(featureData[active].titleKey)}</FeatureTitle>
               <FeatureDesc>{t(featureData[active].descKey)}</FeatureDesc>
-              <ProgressBar><ProgressFill key={progressKey} $duration={INTERVAL} /></ProgressBar>
+              <ProgressBar><ProgressFill key={active} $duration={INTERVAL} /></ProgressBar>
             </FeatureBox>
           </MobileControls>
 
@@ -376,7 +393,7 @@ export function Features() {
                   <FeatureIcon $active={isActive}>{icons[i]}</FeatureIcon>
                   <FeatureTitle $active={isActive}>{t(titleKey)}</FeatureTitle>
                   <FeatureDesc>{t(descKey)}</FeatureDesc>
-                  {isActive && <ProgressBar><ProgressFill key={progressKey} $duration={INTERVAL} /></ProgressBar>}
+                  {isActive && <ProgressBar><ProgressFill key={active} $duration={INTERVAL} /></ProgressBar>}
                 </FeatureBox>
               );
             })}
