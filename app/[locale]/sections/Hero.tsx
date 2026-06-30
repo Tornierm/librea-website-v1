@@ -5,7 +5,9 @@ import { useTranslations } from 'next-intl';
 import { eyebrow, headingXl, bodyMd, Section as BaseSection } from '@/components/ui/typography';
 import { WaitlistCTA } from '@/components/ui/WaitlistCTA';
 
-const Section = styled(BaseSection)`
+const Section = styled.div`
+  padding:  0 0 48px 0;
+  @media (min-width: 768px) { padding: 0 0 96px 0; }
   position: relative;
   overflow: hidden;
 `;
@@ -15,7 +17,7 @@ const Grid = styled.div`
   display: grid;
   width: 100%;
   max-width: 1350px;
-  padding: 0 var(--layout-pad);
+  padding: 0 0 0 var(--layout-pad);
   grid-template-columns: repeat(6, 1fr);
   gap: 18px;
   align-items: end;
