@@ -44,19 +44,6 @@ const Right = styled.div`
   gap: 8px;
 `;
 
-const EmailLabel = styled.p`
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text);
-  margin: 0;
-`;
-
-const EmailSub = styled.p`
-  font-size: 13px;
-  color: var(--text-muted);
-  margin: 0 0 8px;
-`;
-
 const Bottom = styled.div`
   margin: 0 auto;
   max-width: 1350px;
