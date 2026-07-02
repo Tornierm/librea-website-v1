@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import { useTranslations } from 'next-intl';
-import { eyebrow, headingXl, bodyMd, Section as BaseSection } from '@/components/ui/typography';
+import { eyebrow, headingXl, bodyMd } from '@/components/ui/typography';
 import { WaitlistCTA } from '@/components/ui/WaitlistCTA';
 
 const Section = styled.div`
