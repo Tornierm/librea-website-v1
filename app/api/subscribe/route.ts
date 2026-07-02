@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID;
 const API_KEY = process.env.RESEND_API_KEY;
 
 export async function POST(req: NextRequest) {
@@ -10,12 +9,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'invalid_email' }, { status: 400 });
   }
 
-  if (!API_KEY || !AUDIENCE_ID) {
-    console.error('Missing env vars:', { hasKey: !!API_KEY, hasAudience: !!AUDIENCE_ID });
-    return NextResponse.json({ error: 'server_config' }, { status: 500 });
-  }
-
-  const res = await fetch(`https://api.resend.com/audiences/${AUDIENCE_ID}/contacts`, {
+  const res = await fetch('https://api.resend.com/contacts', {
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${API_KEY}`,
