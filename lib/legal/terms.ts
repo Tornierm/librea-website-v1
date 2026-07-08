@@ -1,6 +1,5 @@
 // Terms of use, one markdown string per locale. The German version is the
 // authoritative one; the English version is a convenience translation.
-// Placeholders in [BRACKETS] must be filled in before launch.
 
 const en = `
 # Terms of Use
@@ -10,7 +9,7 @@ const en = `
 ## 1. Scope and operator
 
 These terms govern the use of the Librea app and website ("Librea"),
-operated by **[FULL NAME]**, [STREET AND NUMBER], [POSTAL CODE, CITY],
+operated by **Milan Tornier**, Karlsgartenstr. 14, 12049 Berlin,
 Germany ("we", "us"). By creating an account you agree to these terms.
 
 ## 2. What Librea is
@@ -95,8 +94,8 @@ const de = `
 ## 1. Geltungsbereich und Betreiber
 
 Diese Nutzungsbedingungen gelten für die Nutzung der Librea-App und -Website
-(„Librea"), betrieben von **[VOLLSTÄNDIGER NAME]**, [STRASSE UND HAUSNUMMER],
-[PLZ, ORT], Deutschland („wir", „uns"). Mit der Erstellung eines Kontos
+(„Librea"), betrieben von **Milan Tornier**, Karlsgartenstr. 14,
+12049 Berlin, Deutschland („wir", „uns"). Mit der Erstellung eines Kontos
 stimmen Sie diesen Bedingungen zu.
 
 ## 2. Was Librea ist
