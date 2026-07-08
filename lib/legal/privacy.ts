@@ -46,8 +46,8 @@ app, we process the following categories of data:
 
 ## 3. Hosting and backend (Supabase)
 
-Our database, authentication, and file storage run on Supabase
-([SUPABASE REGION, e.g. AWS eu-central-1, Frankfurt]). Supabase processes data
+Our database, authentication, and file storage run on Supabase, hosted in
+the EU (AWS eu-central-1, Frankfurt, Germany). Supabase processes data
 on our behalf under a data processing agreement (Art. 28 GDPR). Legal basis:
 Art. 6(1)(b) GDPR (performance of the user contract) and Art. 6(1)(f) GDPR
 (secure, reliable operation of the service).
@@ -198,7 +198,7 @@ verarbeiten wir folgende Datenkategorien:
 ## 3. Hosting und Backend (Supabase)
 
 Unsere Datenbank, Authentifizierung und Dateispeicherung laufen bei Supabase
-([SUPABASE-REGION, z. B. AWS eu-central-1, Frankfurt]). Supabase verarbeitet
+und werden in der EU gehostet (AWS eu-central-1, Frankfurt am Main). Supabase verarbeitet
 Daten in unserem Auftrag auf Grundlage eines Auftragsverarbeitungsvertrags
 (Art. 28 DSGVO). Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Erfüllung des
 Nutzungsvertrags) sowie Art. 6 Abs. 1 lit. f DSGVO (sicherer und zuverlässiger
