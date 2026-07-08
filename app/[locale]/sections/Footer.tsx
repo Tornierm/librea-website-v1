@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { LibreaLogo } from '@/components/ui/LibreaLogo';
 import { WaitlistCTA } from '@/components/ui/WaitlistCTA';
 
@@ -82,6 +82,7 @@ const Copy = styled.p`
 
 export function Footer() {
   const t = useTranslations('footer');
+  const locale = useLocale();
 
   return (
     <FooterEl>
@@ -97,7 +98,8 @@ export function Footer() {
 
       <Bottom>
         <Links>
-          <FooterLink href="#">{t('privacy')}</FooterLink>
+          <FooterLink href={`/${locale}/privacy`}>{t('privacy')}</FooterLink>
+          <FooterLink href={`/${locale}/impressum`}>{t('impressum')}</FooterLink>
           <FooterLink href="#">{t('terms')}</FooterLink>
           <FooterLink href="#">{t('contact')}</FooterLink>
         </Links>
