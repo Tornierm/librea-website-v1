@@ -99,8 +99,7 @@ export function Footer() {
       <Bottom>
         <Links>
           <FooterLink href={`/${locale}/privacy`}>{t('privacy')}</FooterLink>
-          <FooterLink href={`/${locale}/impressum`}>{t('impressum')}</FooterLink>
-          <FooterLink href="#">{t('terms')}</FooterLink>
+          <FooterLink href={`/${locale}/terms`}>{t('terms')}</FooterLink>
           <FooterLink href="#">{t('contact')}</FooterLink>
         </Links>
         <Copy>© {new Date().getFullYear()} Librea. {t('rights')}</Copy>

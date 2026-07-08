@@ -1,7 +1,6 @@
 // Privacy policy content (GDPR Art. 13/14), one markdown string per locale.
 // The German version is the authoritative one; the English version is a
-// convenience translation. Placeholders in [BRACKETS] must be filled in
-// before launch.
+// convenience translation.
 
 export const PRIVACY_UPDATED = '2026-07-08';
 
@@ -18,11 +17,11 @@ under the EU General Data Protection Regulation (GDPR).
 
 The controller responsible for data processing is:
 
-**[FULL NAME]**
-[STREET AND NUMBER]
-[POSTAL CODE, CITY]
-Germany
-Email: [CONTACT EMAIL]
+**Milan Tornier**\\
+Karlsgartenstr. 14\\
+12049 Berlin\\
+Germany\\
+Email: contact@librea-marketplace.com
 
 ## 2. Overview
 
@@ -46,8 +45,8 @@ app, we process the following categories of data:
 
 ## 3. Hosting and backend (Supabase)
 
-Our database, authentication, and file storage run on Supabase
-([SUPABASE REGION, e.g. AWS eu-central-1, Frankfurt]). Supabase processes data
+Our database, authentication, and file storage run on Supabase, hosted in
+the EU (AWS eu-central-1, Frankfurt, Germany). Supabase processes data
 on our behalf under a data processing agreement (Art. 28 GDPR). Legal basis:
 Art. 6(1)(b) GDPR (performance of the user contract) and Art. 6(1)(f) GDPR
 (secure, reliable operation of the service).
@@ -137,10 +136,12 @@ You have the right to:
 - **Withdraw consent** at any time with effect for the future (Art. 7(3) GDPR)
 
 You also have the right to lodge a complaint with a supervisory authority,
-in particular in the German federal state of your habitual residence
-([COMPETENT STATE DATA PROTECTION AUTHORITY]).
+in particular in the German federal state of your habitual residence. The
+authority responsible for us is the Berlin Commissioner for Data Protection
+and Freedom of Information (Berliner Beauftragte für Datenschutz und
+Informationsfreiheit, [www.datenschutz-berlin.de](https://www.datenschutz-berlin.de)).
 
-To exercise your rights, contact us at [CONTACT EMAIL].
+To exercise your rights, contact us at contact@librea-marketplace.com.
 
 ## 13. No automated decision-making
 
@@ -168,11 +169,11 @@ verarbeitet und welche Rechte Ihnen nach der Datenschutz-Grundverordnung
 
 Verantwortlicher für die Datenverarbeitung ist:
 
-**[VOLLSTÄNDIGER NAME]**
-[STRASSE UND HAUSNUMMER]
-[PLZ, ORT]
-Deutschland
-E-Mail: [KONTAKT-E-MAIL]
+**Milan Tornier**\\
+Karlsgartenstr. 14\\
+12049 Berlin\\
+Deutschland\\
+E-Mail: contact@librea-marketplace.com
 
 ## 2. Überblick
 
@@ -198,7 +199,7 @@ verarbeiten wir folgende Datenkategorien:
 ## 3. Hosting und Backend (Supabase)
 
 Unsere Datenbank, Authentifizierung und Dateispeicherung laufen bei Supabase
-([SUPABASE-REGION, z. B. AWS eu-central-1, Frankfurt]). Supabase verarbeitet
+und werden in der EU gehostet (AWS eu-central-1, Frankfurt am Main). Supabase verarbeitet
 Daten in unserem Auftrag auf Grundlage eines Auftragsverarbeitungsvertrags
 (Art. 28 DSGVO). Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Erfüllung des
 Nutzungsvertrags) sowie Art. 6 Abs. 1 lit. f DSGVO (sicherer und zuverlässiger
@@ -299,10 +300,12 @@ Sie haben das Recht auf:
   (Art. 7 Abs. 3 DSGVO)
 
 Außerdem haben Sie das Recht, sich bei einer Datenschutzaufsichtsbehörde zu
-beschweren, insbesondere in dem Bundesland Ihres gewöhnlichen Aufenthalts
-([ZUSTÄNDIGE LANDESDATENSCHUTZBEHÖRDE]).
+beschweren, insbesondere in dem Bundesland Ihres gewöhnlichen Aufenthalts.
+Die für uns zuständige Behörde ist die Berliner Beauftragte für Datenschutz
+und Informationsfreiheit
+([www.datenschutz-berlin.de](https://www.datenschutz-berlin.de)).
 
-Zur Ausübung Ihrer Rechte wenden Sie sich an [KONTAKT-E-MAIL].
+Zur Ausübung Ihrer Rechte wenden Sie sich an contact@librea-marketplace.com.
 
 ## 13. Keine automatisierte Entscheidungsfindung
 
