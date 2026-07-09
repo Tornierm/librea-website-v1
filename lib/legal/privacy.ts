@@ -76,10 +76,12 @@ See [Google's privacy policy](https://policies.google.com/privacy).
 ## 6. Friend finding via contacts
 
 If you choose to use the friend-finding feature, the app asks for permission
-to access your address book. Phone numbers from your contacts are then
-transmitted to our server **solely** to check whether a matching Librea
-account exists. The numbers are used only for this comparison and are not
-permanently stored or used for any other purpose. Please only use this
+to access your address book. Phone numbers from your contacts are
+pseudonymized (hashed) **on your device**; only these hashes are transmitted
+to our server, **solely** to check whether a matching Librea account exists.
+Your contacts' readable numbers never leave your device. The hashes are used
+only for this comparison and are not permanently stored or used for any
+other purpose. Please only use this
 feature if you are confident your contacts would not object. Legal basis:
 Art. 6(1)(a) GDPR (consent); for the matching itself Art. 6(1)(f) GDPR
 (legitimate interest in connecting users). You can use Librea fully without
@@ -234,8 +236,10 @@ Privacy Framework zertifiziert. Siehe
 
 Wenn Sie die Freundesuche nutzen möchten, fragt die App die Berechtigung für
 den Zugriff auf Ihr Adressbuch an. Telefonnummern aus Ihren Kontakten werden
-dann **ausschließlich** an unseren Server übermittelt, um zu prüfen, ob ein
-passendes Librea-Konto existiert. Die Nummern werden nur für diesen Abgleich
+**auf Ihrem Gerät** pseudonymisiert (gehasht); nur diese Hashwerte werden
+**ausschließlich** an unseren Server übermittelt, um zu prüfen, ob ein
+passendes Librea-Konto existiert. Die Nummern Ihrer Kontakte verlassen Ihr
+Gerät nie im Klartext. Die Hashwerte werden nur für diesen Abgleich
 verwendet und weder dauerhaft gespeichert noch für andere Zwecke genutzt.
 Bitte nutzen Sie diese Funktion nur, wenn Sie davon ausgehen können, dass
 Ihre Kontakte damit einverstanden wären. Rechtsgrundlage: Art. 6 Abs. 1
