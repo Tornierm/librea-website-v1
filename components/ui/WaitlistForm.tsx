@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useTranslations } from 'next-intl';
+import { EMAIL_SUBMITTED_KEY } from './waitlistStorage';
 
 const Form = styled.form`
   display: flex;
@@ -112,6 +113,7 @@ export function WaitlistForm() {
       return;
     }
 
+    localStorage.setItem(EMAIL_SUBMITTED_KEY, '1');
     setDone(true);
   }
 

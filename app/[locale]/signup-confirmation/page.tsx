@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 import { LibreaLogo } from '@/components/ui/LibreaLogo';
-import { StoreButtons } from '@/components/ui/StoreButtons';
 
 export default async function SignupConfirmationPage({
   params,
@@ -63,10 +62,7 @@ export default async function SignupConfirmationPage({
         {t('body')}
       </p>
 
-      <StoreButtons />
-
       <Link href={`/${locale}`} style={{
-        marginTop: 40,
         fontSize: 14,
         color: 'var(--text-muted)',
         textDecoration: 'none',
