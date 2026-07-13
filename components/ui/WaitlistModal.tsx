@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { useTranslations } from 'next-intl';
 import { WaitlistForm } from './WaitlistForm';
+import { EMAIL_SUBMITTED_KEY } from './waitlistStorage';
 
 const DELAY_MS = 20_000;
 const SESSION_KEY = 'waitlist_modal_seen';
@@ -76,6 +77,7 @@ export function WaitlistModal() {
 
   useEffect(() => {
     if (sessionStorage.getItem(SESSION_KEY)) return;
+    if (localStorage.getItem(EMAIL_SUBMITTED_KEY)) return;
     const timer = setTimeout(() => setVisible(true), DELAY_MS);
     return () => clearTimeout(timer);
   }, []);
