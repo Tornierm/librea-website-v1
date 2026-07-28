@@ -19,7 +19,7 @@ const Input = styled.input`
   border: 1px solid var(--border);
   background: var(--bg);
   color: var(--text);
-  font-size: 15px;
+  font-size: 16px;
   outline: none;
   box-sizing: border-box;
   transition: border-color 0.15s;
