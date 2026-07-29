@@ -1,5 +1,11 @@
 # Librea Website v1
 
+## Workflow
+
+Every new feature or fix gets its own branch off `main` — never build a new feature
+on top of an unrelated feature branch. Name branches `feat/...`, `fix/...`, or
+`chore/...`. Open a PR into `main` rather than committing to `main` directly.
+
 ## Stack
 - Next.js 16 (App Router, Turbopack)
 - TypeScript

@@ -101,6 +101,7 @@ export function Footer() {
           <FooterLink href={`/${locale}/privacy`}>{t('privacy')}</FooterLink>
           <FooterLink href={`/${locale}/impressum`}>{t('impressum')}</FooterLink>
           <FooterLink href={`/${locale}/terms`}>{t('terms')}</FooterLink>
+          <FooterLink href={`/${locale}/delete-account`}>{t('deleteAccount')}</FooterLink>
           <FooterLink href="mailto:contact@librea-marketplace.com">{t('contact')}</FooterLink>
         </Links>
         <Copy>© {new Date().getFullYear()} Librea. {t('rights')}</Copy>

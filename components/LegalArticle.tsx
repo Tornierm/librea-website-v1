@@ -14,8 +14,8 @@ export function LegalArticle({ markdown }: { markdown: string }) {
           p:      ({ children }) => <p style={{ ...prose, marginBottom: 20 }}>{children}</p>,
           strong: ({ children }) => <strong style={{ color: 'var(--text)', fontWeight: 700 }}>{children}</strong>,
           em:     ({ children }) => <em style={{ color: 'var(--text-subtle)' }}>{children}</em>,
-          ul:     ({ children }) => <ul style={{ ...prose, paddingLeft: 24, marginBottom: 20 }}>{children}</ul>,
-          ol:     ({ children }) => <ol style={{ ...prose, paddingLeft: 24, marginBottom: 20 }}>{children}</ol>,
+          ul:     ({ children }) => <ul style={{ ...prose, paddingLeft: 24, marginBottom: 20, listStyle: 'disc outside' }}>{children}</ul>,
+          ol:     ({ children }) => <ol style={{ ...prose, paddingLeft: 24, marginBottom: 20, listStyle: 'decimal outside' }}>{children}</ol>,
           li:     ({ children }) => <li style={{ marginBottom: 8 }}>{children}</li>,
           a:      ({ children, href }) => <a href={href} style={{ color: 'var(--brand)' }} target="_blank" rel="noopener noreferrer">{children}</a>,
         }}
