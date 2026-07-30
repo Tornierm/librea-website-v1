@@ -40,6 +40,7 @@
     "emailPlaceholder": "your@email.com",
     "emailCta": "Notify me",
     "emailThanks": "You're on the list. We'll be in touch!",
+    "support": "Support",
     "privacy": "Privacy Policy",
     "impressum": "Legal Notice",
     "terms": "Terms of Use",
@@ -98,5 +99,44 @@
   "modal": {
     "heading": "We're launching soon.",
     "body": "Join the waitlist and be among the first community members of the future largest library in the world."
+  },
+  "support": {
+    "eyebrow": "Support",
+    "heading": "Need help? We're here for you.",
+    "intro": "Find answers to the most common questions about Librea below. Can't find what you're looking for? Just send us a message — we're happy to help.",
+    "faqHeading": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "How do I list a book?",
+        "a": "Tap the plus button and scan the barcode on the back of the book — the title, author and cover are recognised automatically. Then add the condition and your price, and publish your listing."
+      },
+      {
+        "q": "How do buying, selling and swapping work?",
+        "a": "Find a book near you and message the owner directly in the chat. Agree on a purchase, swap or giveaway and pick a meeting point nearby — no shipping needed. Handover and payment happen in person, on the spot."
+      },
+      {
+        "q": "How do I reset my password?",
+        "a": "On the sign-in screen, tap “Forgot password?” and enter your email address. We'll send you a link to set a new password."
+      },
+      {
+        "q": "How do I edit my profile?",
+        "a": "Open the Profile tab and tap “Edit profile”. There you can change your name, profile picture and details at any time."
+      },
+      {
+        "q": "How do I report a user or a listing?",
+        "a": "Open the profile or listing in question, tap the menu (⋯) and choose “Report”. Briefly describe the problem — our team reviews every report. For urgent cases, reach us at milantornier0@gmail.com."
+      },
+      {
+        "q": "How do I delete my account?",
+        "a": "Go to Profile → Settings → Danger Zone and tap “Delete account”. Your account and all personal data — profile, listings, messages, reviews and uploaded images — are deleted immediately and permanently. Residual copies in encrypted backups are removed within 30 days.",
+        "href": "/delete-account",
+        "linkLabel": "Learn more: Delete account"
+      }
+    ],
+    "contactHeading": "Still have questions?",
+    "contactBody": "Send us an email — we're happy to help.",
+    "email": "milantornier0@gmail.com",
+    "responseNote": "We usually reply within 48 hours.",
+    "emailCta": "Email us"
   }
 }
