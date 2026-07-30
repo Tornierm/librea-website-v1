@@ -40,6 +40,7 @@
     "emailPlaceholder": "deine@email.com",
     "emailCta": "Benachrichtigen",
     "emailThanks": "Du stehst auf der Liste. Wir melden uns!",
+    "support": "Support",
     "privacy": "Datenschutz",
     "impressum": "Impressum",
     "terms": "Nutzungsbedingungen",
@@ -98,5 +99,44 @@
   "modal": {
     "heading": "Wir starten bald.",
     "body": "Trag dich in die Warteliste ein und sei eines der ersten Mitglieder der zukünftig größten Bibliothek der Welt."
+  },
+  "support": {
+    "eyebrow": "Support",
+    "heading": "Brauchst du Hilfe? Wir sind für dich da.",
+    "intro": "Hier findest du Antworten auf die häufigsten Fragen rund um Librea. Ist etwas nicht dabei, schreib uns einfach — wir helfen dir gern weiter.",
+    "faqHeading": "Häufige Fragen",
+    "faq": [
+      {
+        "q": "Wie stelle ich ein Buch ein?",
+        "a": "Tippe auf das Plus-Symbol und scanne den Barcode auf der Rückseite des Buches — Titel, Autor und Cover werden automatisch erkannt. Ergänze anschließend den Zustand und deinen Preis und veröffentliche dein Inserat."
+      },
+      {
+        "q": "Wie funktionieren Kaufen, Verkaufen und Tauschen?",
+        "a": "Finde ein Buch in deiner Nähe und schreib der Person direkt im Chat. Ihr einigt euch auf Kauf, Tausch oder Verschenken und vereinbart einen Treffpunkt in eurer Umgebung — ganz ohne Versand. Übergabe und Bezahlung erfolgen persönlich vor Ort."
+      },
+      {
+        "q": "Wie setze ich mein Passwort zurück?",
+        "a": "Tippe im Anmeldebildschirm auf „Passwort vergessen?“ und gib deine E-Mail-Adresse ein. Wir senden dir einen Link, mit dem du ein neues Passwort festlegen kannst."
+      },
+      {
+        "q": "Wie bearbeite ich mein Profil?",
+        "a": "Öffne den Profil-Tab und tippe auf „Profil bearbeiten“. Dort kannst du deinen Namen, dein Profilbild und deine Angaben jederzeit ändern."
+      },
+      {
+        "q": "Wie melde ich einen Nutzer oder ein Inserat?",
+        "a": "Öffne das betreffende Profil oder Inserat, tippe auf das Menü (⋯) und wähle „Melden“. Beschreibe kurz das Problem — unser Team prüft jede Meldung. In dringenden Fällen erreichst du uns unter milantornier0@gmail.com."
+      },
+      {
+        "q": "Wie lösche ich mein Konto?",
+        "a": "Gehe zu Profil → Einstellungen → Gefahrenzone und tippe auf „Konto löschen“. Dein Konto und alle personenbezogenen Daten — Profil, Inserate, Nachrichten, Bewertungen und hochgeladene Bilder — werden sofort und dauerhaft gelöscht. Restkopien in verschlüsselten Backups werden innerhalb von 30 Tagen entfernt.",
+        "href": "/delete-account",
+        "linkLabel": "Mehr dazu: Konto löschen"
+      }
+    ],
+    "contactHeading": "Noch Fragen?",
+    "contactBody": "Schreib uns eine E-Mail — wir helfen dir gern weiter.",
+    "email": "milantornier0@gmail.com",
+    "responseNote": "Wir antworten in der Regel innerhalb von 48 Stunden.",
+    "emailCta": "E-Mail schreiben"
   }
 }
