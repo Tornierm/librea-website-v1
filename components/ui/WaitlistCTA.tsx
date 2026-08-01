@@ -15,7 +15,7 @@ const Stack = styled.div`
 export function WaitlistCTA() {
   return (
     <Stack>
-      <StoreButtons disabled fullWidth />
+      <StoreButtons fullWidth />
       <WaitlistForm />
     </Stack>
   );
