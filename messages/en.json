@@ -89,6 +89,10 @@
     "body": "Welcome to Librea. Download the app and start sharing books with people around you.",
     "back": "Back to homepage"
   },
+  "modal": {
+    "heading": "Get the Librea app",
+    "body": "Librea is now in public testing. Download the app and start sharing books with people around you."
+  },
   "support": {
     "eyebrow": "Support",
     "heading": "Need help? We're here for you.",

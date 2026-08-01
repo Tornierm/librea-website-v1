@@ -89,6 +89,10 @@
     "body": "Willkommen bei Librea. Lade die App herunter und fang an, Bücher mit Menschen in deiner Nähe zu teilen.",
     "back": "Zurück zur Startseite"
   },
+  "modal": {
+    "heading": "Hol dir die Librea-App",
+    "body": "Librea befindet sich jetzt im öffentlichen Test. Lade die App herunter und teile Bücher mit Menschen in deiner Nähe."
+  },
   "support": {
     "eyebrow": "Support",
     "heading": "Brauchst du Hilfe? Wir sind für dich da.",

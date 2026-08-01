@@ -7,6 +7,7 @@ import { ThemeProvider } from '@/components/providers/ThemeProvider';
 import { UIProvider } from '@/components/providers/UIProvider';
 import { Header } from '@/components/Header';
 import { GridGuide } from '@/components/GridGuide';
+import { DownloadModal } from '@/components/ui/DownloadModal';
 import { Footer } from '@/app/[locale]/sections/Footer';
 import StyledComponentsRegistry from '@/app/registry';
 import '../globals.css';
@@ -49,6 +50,7 @@ export default async function LocaleLayout({
             <UIProvider>
               <GridGuide />
               <Header />
+              <DownloadModal />
               {children}
               <Footer />
             </UIProvider>
