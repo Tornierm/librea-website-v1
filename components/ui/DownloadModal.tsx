@@ -3,11 +3,10 @@
 import { useEffect, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { useTranslations } from 'next-intl';
-import { WaitlistForm } from './WaitlistForm';
-import { EMAIL_SUBMITTED_KEY } from './waitlistStorage';
+import { StoreButtons } from './StoreButtons';
 
 const DELAY_MS = 20_000;
-const SESSION_KEY = 'waitlist_modal_seen';
+const SESSION_KEY = 'download_modal_seen';
 
 const fadeIn = keyframes`
   from { opacity: 0; }
@@ -71,13 +70,12 @@ const Body = styled.p`
   margin: 0 0 28px;
 `;
 
-export function WaitlistModal() {
+export function DownloadModal() {
   const t = useTranslations('modal');
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     if (sessionStorage.getItem(SESSION_KEY)) return;
-    if (localStorage.getItem(EMAIL_SUBMITTED_KEY)) return;
     const timer = setTimeout(() => setVisible(true), DELAY_MS);
     return () => clearTimeout(timer);
   }, []);
@@ -99,7 +97,7 @@ export function WaitlistModal() {
         </CloseBtn>
         <Heading>{t('heading')}</Heading>
         <Body>{t('body')}</Body>
-        <WaitlistForm />
+        <StoreButtons fullWidth />
       </Panel>
     </Backdrop>
   );

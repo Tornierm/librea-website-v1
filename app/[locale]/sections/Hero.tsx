@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import { useTranslations } from 'next-intl';
 import { eyebrow, headingXl, bodyMd } from '@/components/ui/typography';
-import { WaitlistCTA } from '@/components/ui/WaitlistCTA';
+import { StoreButtons } from '@/components/ui/StoreButtons';
 
 const Section = styled.div`
   padding:  0 0 48px 0;
@@ -107,7 +107,7 @@ export function Hero() {
           <Eyebrow>{t('eyebrow')}</Eyebrow>
           <Heading>{t('heading')}</Heading>
           <Description>{t('description')}</Description>
-          <WaitlistCTA />
+          <StoreButtons fullWidth />
         </TextCol>
 
         <ImageCol>
