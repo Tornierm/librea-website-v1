@@ -3,7 +3,6 @@
 import styled from 'styled-components';
 
 const IOS_TESTFLIGHT_URL = 'https://testflight.apple.com/join/76sb8uA9';
-const ANDROID_PLAY_URL = 'https://play.google.com/store/apps/details?id=dev.librea.app';
 
 const Container = styled.div<{ $fullWidth?: boolean }>`
   display: flex;
@@ -25,7 +24,7 @@ const ButtonWrap = styled.div<{ $fullWidth?: boolean }>`
   ${({ $fullWidth }) => $fullWidth && 'flex: 1;'}
 `;
 
-const StoreButton = styled.a<{ $fullWidth?: boolean }>`
+const StoreButton = styled.a<{ $disabled?: boolean; $fullWidth?: boolean }>`
   display: inline-flex;
   ${({ $fullWidth }) => $fullWidth && 'width: 100%; justify-content: center;'}
   align-items: center;
@@ -34,20 +33,24 @@ const StoreButton = styled.a<{ $fullWidth?: boolean }>`
   border-radius: var(--radius-sm);
   text-decoration: none;
   transition: all 0.2s ease;
-  cursor: pointer;
-  background: var(--button-primary-bg);
-  color: var(--button-primary-text);
-  border: 1px solid transparent;
+  cursor: ${({ $disabled }) => ($disabled ? 'not-allowed' : 'pointer')};
+  pointer-events: ${({ $disabled }) => ($disabled ? 'none' : 'auto')};
+  opacity: ${({ $disabled }) => ($disabled ? 0.55 : 1)};
+  background: ${({ $disabled }) => ($disabled ? 'var(--bg-subtle)' : 'var(--button-primary-bg)')};
+  color: ${({ $disabled }) => ($disabled ? 'var(--text)' : 'var(--button-primary-text)')};
+  border: ${({ $disabled }) => ($disabled ? '1px solid var(--border)' : '1px solid transparent')};
   box-sizing: border-box;
 
-  &:hover { background: var(--button-primary-hover); }
+  &:hover {
+    background: ${({ $disabled }) => ($disabled ? 'var(--bg-subtle)' : 'var(--button-primary-hover)')};
+  }
 `;
 
-const BetaChip = styled.span`
+const Chip = styled.span<{ $muted?: boolean }>`
   position: absolute;
   top: -8px;
   right: -8px;
-  background: var(--brand);
+  background: ${({ $muted }) => ($muted ? 'var(--text-subtle)' : 'var(--brand)')};
   color: var(--button-primary-text);
   font-size: 9px;
   font-weight: 700;
@@ -115,31 +118,26 @@ export function StoreButtons({ fullWidth }: { fullWidth?: boolean }) {
               <StoreName>TestFlight</StoreName>
             </StoreLabel>
           </StoreButton>
-          <BetaChip>Beta</BetaChip>
+          <Chip>Beta</Chip>
         </ButtonWrap>
 
         <ButtonWrap $fullWidth={fullWidth}>
-          <StoreButton
-            href={ANDROID_PLAY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            $fullWidth={fullWidth}
-          >
+          <StoreButton as="div" $disabled $fullWidth={fullWidth} aria-disabled="true">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M3.18 23.76c.3.17.64.2.96.08l12.29-7.1-2.73-2.73zM.91 1.48A1.5 1.5 0 0 0 .5 2.5v19a1.5 1.5 0 0 0 .41 1.02l.05.05L12.2 11.3v-.26L.96 1.43zM22.1 10.3l-2.89-1.67-3.06 3.06 3.06 3.06 2.91-1.68a1.48 1.48 0 0 0 0-2.77zM4.14.24 16.43 7.34 13.7 10.07.14.05A1.5 1.5 0 0 1 4.14.24z"/>
             </svg>
             <StoreLabel>
-              <StoreSubline>Get it on</StoreSubline>
+              <StoreSubline>Coming soon to</StoreSubline>
               <StoreName>Google Play</StoreName>
             </StoreLabel>
           </StoreButton>
-          <BetaChip>Beta</BetaChip>
+          <Chip $muted>Coming Soon</Chip>
         </ButtonWrap>
       </Row>
 
       <TestingNote>
         <Dot />
-        Currently in public testing — help us shape Librea.
+        iOS is in public testing — Android is coming soon.
       </TestingNote>
     </Container>
   );
