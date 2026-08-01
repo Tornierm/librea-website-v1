@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import { useLocale, useTranslations } from 'next-intl';
 import { LibreaLogo } from '@/components/ui/LibreaLogo';
-import { WaitlistCTA } from '@/components/ui/WaitlistCTA';
+import { StoreButtons } from '@/components/ui/StoreButtons';
 
 const FooterEl = styled.footer`
   border-top: 1px solid var(--border);
@@ -92,7 +92,7 @@ export function Footer() {
           <Tagline>{t('tagline')}</Tagline>
         </Left>
         <Right>
-          <WaitlistCTA />
+          <StoreButtons fullWidth />
         </Right>
       </Inner>
 

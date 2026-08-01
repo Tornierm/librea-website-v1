@@ -9,7 +9,7 @@ const Container = styled.div<{ $fullWidth?: boolean }>`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  ${({ $fullWidth }) => $fullWidth && 'width: 100%;'}
+  ${({ $fullWidth }) => $fullWidth && 'width: 100%; max-width: 400px;'}
 `;
 
 const Row = styled.div<{ $fullWidth?: boolean }>`
