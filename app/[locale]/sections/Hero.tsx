@@ -29,6 +29,7 @@ const Grid = styled.div`
 
 const TextCol = styled.div`
   grid-column: span 6;
+  order: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -37,17 +38,35 @@ const TextCol = styled.div`
 
   @media (min-width: 768px) {
     grid-column: 2 / span 5;
+    grid-row: 1;
+    padding-bottom: 0;
   }
 `;
 
 const ImageCol = styled.div`
   grid-column: span 6;
+  order: 2;
   display: flex;
   align-items: flex-end;
   justify-content: center;
 
   @media (min-width: 768px) {
     grid-column: 7 / span 5;
+    grid-row: 1 / span 2;
+    order: 0;
+  }
+`;
+
+const CtaCol = styled.div`
+  grid-column: span 6;
+  order: 3;
+  padding: 24px 24px 0;
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    grid-column: 2 / span 5;
+    grid-row: 2;
+    padding: 24px 24px 0;
   }
 `;
 
@@ -56,13 +75,13 @@ const Heading = styled.h1`
   ${headingXl}
   white-space: pre-line;
   margin-bottom: 24px;
-  font-size: clamp(48px, 8vw, 72px);
+  font-size: clamp(40px, 8vw, 72px);
 `;
 const Description = styled.p`
   ${bodyMd}
   max-width: 44ch;
   margin-bottom: 40px;
-  @media (min-width: 768px) { font-size: 18px; }
+  @media (min-width: 768px) { font-size: 18px; margin-bottom: 0; }
 `;
 
 
@@ -105,7 +124,6 @@ export function Hero() {
           <Eyebrow>{t('eyebrow')}</Eyebrow>
           <Heading>{t('heading')}</Heading>
           <Description>{t('description')}</Description>
-          <StoreButtons fullWidth />
         </TextCol>
 
         <ImageCol>
@@ -114,6 +132,10 @@ export function Hero() {
             <ImageOverlay />
           </ImageWrapper>
         </ImageCol>
+
+        <CtaCol>
+          <StoreButtons fullWidth />
+        </CtaCol>
       </Grid>
     </Section>
   );
