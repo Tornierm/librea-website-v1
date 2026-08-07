@@ -7,25 +7,25 @@
     "cta": "App laden"
   },
   "meta": {
-    "title": "Librea - Mehr lesen, weniger zahlen",
-    "description": "Der Gebrauchtbuch-Marktplatz für Leser, die günstiger kaufen und leicht verkaufen wollen."
+    "title": "Librea - Wir bauen die größte Bibliothek der Welt",
+    "description": "Von Lesern, für Leser. Librea macht jeden Leser zum Bibliothekar — teile dein Regal mit deinem Netzwerk und starte eine Buch-Community, wo immer du bist."
   },
   "howItWorks": {
     "eyebrow": "So funktioniert's",
     "step1_label": "Buch finden",
-    "step1_heading": "Inserate in deiner Nähe durchstöbern",
-    "step1_description": "Suche nach Titel, Autor oder Genre und finde Bücher gleich um die Ecke.",
+    "step1_heading": "Regale in deiner Nähe durchstöbern",
+    "step1_description": "Suche nach Titel, Autor oder Genre und finde Bücher in den Regalen von Lesern gleich um die Ecke.",
     "step2_label": "Lokal treffen",
     "step2_heading": "Treffpunkt vereinbaren, kein Versand",
-    "step2_description": "Schreib dem Verkäufer und wählt einen Treffpunkt. Kein Verpacken, kein Warten.",
-    "step3_label": "Weniger zahlen",
-    "step3_heading": "Gebrauchtpreise, glückliches Portemonnaie",
-    "step3_description": "Hol dir die Bücher, die du liebst, zum Bruchteil des Preises. Alle gewinnen."
+    "step2_description": "Schreib der Besitzerin oder dem Besitzer und wählt einen Treffpunkt. Kein Verpacken, kein Warten.",
+    "step3_label": "Teilen & verbinden",
+    "step3_heading": "Die Bibliothek gemeinsam wachsen lassen",
+    "step3_description": "Verleih die Bücher, die du liebst, leih dir die, die du suchst, und starte eine Buch-Community, wo immer du bist."
   },
   "claim": {
-    "eyebrow": "Besser lesen",
-    "heading": "Der einfachste Weg, Bücher in deiner Nachbarschaft zu kaufen und zu verkaufen.",
-    "description": "Kein Versand, kein Aufwand. Ein Buch in Sekunden einstellen, eines um die Ecke finden. Librea macht lokalen Buchhandel so einfach wie er sein sollte."
+    "eyebrow": "Kein Marktplatz. Eine Bibliothek.",
+    "heading": "Jeder Leser wird zum Bibliothekar.",
+    "description": "Es ging nie um billige Bücher — es ist ein Gemeinschaftsprojekt. Jeder Buchliebhaber kann ein Konto erstellen, seine Bibliothek mit dem eigenen Netzwerk teilen und die Bücher, die er liebt, an die Menschen um sich herum verleihen."
   },
   "blog": {
     "eyebrow": "Aus dem Blog",
@@ -34,7 +34,7 @@
     "readMore": "Weiterlesen"
   },
   "footer": {
-    "tagline": "Der Gebrauchtbuch-Marktplatz für Leser, die günstiger kaufen und leicht verkaufen wollen.",
+    "tagline": "Von Lesern, für Leser. Librea baut die größte Bibliothek der Welt — ein geteiltes Regal nach dem anderen.",
     "emailLabel": "Bleib auf dem Laufenden",
     "emailSub": "Erhalte Updates zu neuen Funktionen und Launches.",
     "emailPlaceholder": "deine@email.com",
@@ -51,47 +51,47 @@
   "testimonials": {
     "eyebrow": "Was Leser sagen",
     "heading": "Echte Menschen, echte Bücher.",
-    "q1": "Ich habe drei Bücher in einer Woche verkauft und zwei weitere für fast nichts gekauft. Das Treffen war fünf Minuten von meiner Tür.",
+    "q1": "Ich habe drei Bücher von Nachbarn geliehen, die ich nie zuvor getroffen hatte, und ein Dutzend eigene verliehen. Mein Regal hat endlich einen Sinn.",
     "n1": "Laura M.",
-    "m1": "4 Bücher auf Librea gekauft",
-    "q2": "Endlich ein Marktplatz, der für Bücher Sinn macht. Keine Versandkosten, kein Warten — nur Menschen, die teilen, was sie lieben.",
+    "m1": "Librearian in Berlin",
+    "q2": "Endlich etwas, das Bücher wie eine Bibliothek behandelt und nicht wie einen Laden — einfach Leser, die teilen, was sie lieben.",
     "n2": "Jonas R.",
-    "m2": "7 Bücher auf Librea verkauft",
-    "q3": "Ich habe ein Buch gefunden, das ich seit Monaten gesucht habe — einen halben Kilometer entfernt. Diese App ist magisch.",
+    "m2": "Librearian seit der Beta",
+    "q3": "Ich habe ein Buch, das ich seit Monaten gesucht habe, in einem Regal einen halben Kilometer entfernt gefunden und es am selben Tag ausgeliehen.",
     "n3": "Sophie K.",
-    "m3": "Librea-Nutzerin seit Beta",
-    "q4": "Meine alten Uni-Bücher in Minuten eingestellt und noch am selben Tag verkauft. Unglaublich einfach.",
+    "m3": "Librearian in Wien",
+    "q4": "Ich habe in meiner Nachbarschaft einen kleinen Buch-Teil-Kreis gestartet. Wir sind jetzt vierzig, alle Librearians.",
     "n4": "Anna M.",
-    "m4": "12 Bücher auf Librea verkauft"
+    "m4": "Hat eine Community in München gestartet"
   },
   "features": {
-    "eyebrow": "Für Leser gemacht",
-    "heading": "Gute Bücher verdienen\nein zweites Kapitel.",
-    "description": "Librea macht den Kauf und Verkauf von Gebrauchtbüchern in deiner Nachbarschaft mühelos.",
+    "eyebrow": "Von Lesern, für Leser",
+    "heading": "Dein Regal ist eine\nkleine Bibliothek.",
+    "description": "Mit Librea öffnest du dein Regal und teilst die Bücher, die du liebst, mühelos mit Lesern in deiner Nähe.",
     "f1_title": "Entdecke Bücher und Leser in deiner Nähe.",
     "f1_desc": "Sieh, was Menschen in deiner Umgebung gerade lesen, und verbindet euch über gemeinsame Vorlieben.",
     "f2_title": "Bücher in Sekunden scannen.",
-    "f2_desc": "Kamera auf den Barcode richten — fertig. Kein Tippen nötig.",
-    "f3_title": "Liken. Teilen.",
-    "f3_desc": "Speichere Bücher, die du liebst, und biete die an, die bei dir nur Staub sammeln.",
+    "f2_desc": "Kamera auf den Barcode richten — schon steht es in deinem Regal. Kein Tippen nötig.",
+    "f3_title": "Liken. Verleihen.",
+    "f3_desc": "Speichere Bücher, die du liebst, und verleih die aus deinem Regal an die Leser um dich herum.",
     "f4_title": "Teile deine Bücher mit Freunden und Nachbarn.",
     "f4_desc": "Dein Regal wird zu einer kleinen Bibliothek für alle in deiner Umgebung."
   },
   "hero": {
-    "eyebrow": "Der Bücher-Marktplatz",
-    "heading": "Mehr lesen,\nweniger zahlen",
-    "description": "Librea verbindet Leser, die ihre Bücher weitergeben möchten, mit denen, die günstig lesen wollen. Gebraucht kaufen, einfach verkaufen — eine Community, die die Liebe zum Lesen teilt.",
+    "eyebrow": "Von Lesern, für Leser",
+    "heading": "Wir bauen die größte\nBibliothek der Welt",
+    "description": "Librea macht jeden Leser zum Bibliothekar. Erstelle dein Konto, teile dein Regal mit deinem Netzwerk und starte eine Buch-Community, wo immer du bist.",
     "cta_ios": "Im App Store laden",
     "cta_android": "Android — Demnächst"
   },
   "signupConfirmation": {
     "heading": "Deine E-Mail wurde bestätigt.",
-    "body": "Willkommen bei Librea. Lade die App herunter und fang an, Bücher mit Menschen in deiner Nähe zu teilen.",
+    "body": "Willkommen im Kreis der Librearians. Lade die App herunter, teile dein Regal und bau mit an der Bibliothek — mit Lesern in deiner Nähe.",
     "back": "Zurück zur Startseite"
   },
   "modal": {
     "heading": "Hol dir die Librea-App",
-    "body": "Librea befindet sich jetzt im öffentlichen Test. Lade die App herunter und teile Bücher mit Menschen in deiner Nähe."
+    "body": "Librea befindet sich jetzt im öffentlichen Test. Lade die App herunter, werde Librearian und teile dein Regal mit Lesern in deiner Nähe."
   },
   "support": {
     "eyebrow": "Support",

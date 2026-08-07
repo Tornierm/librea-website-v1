@@ -7,25 +7,25 @@
     "cta": "Get the App"
   },
   "meta": {
-    "title": "Librea - Read More, Pay Less",
-    "description": "The second-hand book marketplace for readers who want to buy cheaper and sell easily."
+    "title": "Librea - Building the largest library in the world",
+    "description": "By readers, for readers. Librea turns every reader into a librarian — share your shelf with your network and start a book-sharing community wherever you are."
   },
   "howItWorks": {
     "eyebrow": "How it works",
     "step1_label": "Find a book",
-    "step1_heading": "Browse listings near you",
-    "step1_description": "Search by title, author, or genre and find books available just around the corner.",
+    "step1_heading": "Browse shelves near you",
+    "step1_description": "Search by title, author, or genre and find books on the shelves of readers just around the corner.",
     "step2_label": "Meet locally",
     "step2_heading": "Agree on a spot, no shipping",
-    "step2_description": "Connect with the seller and pick a convenient meeting point. No packaging, no waiting.",
-    "step3_label": "Pay less",
-    "step3_heading": "Second-hand prices, happy wallet",
-    "step3_description": "Get the books you love at a fraction of the price. Everyone wins."
+    "step2_description": "Message the owner and pick a convenient meeting point. No packaging, no waiting.",
+    "step3_label": "Share & connect",
+    "step3_heading": "Grow the library together",
+    "step3_description": "Lend the books you love, borrow the ones you've been hunting, and start a book-sharing community wherever you are."
   },
   "claim": {
-    "eyebrow": "A better way to read",
-    "heading": "The easiest way to buy and sell second-hand books in your neighborhood.",
-    "description": "No shipping, no hassle. List a book in seconds, find one down the street. Librea makes local book trading as simple as it should be."
+    "eyebrow": "Not a marketplace. A library.",
+    "heading": "Every reader becomes a librarian.",
+    "description": "This was never about cheap books — it's a community effort. Any book lover can create an account, share their library with their own network, and lend the books they love to the people around them."
   },
   "blog": {
     "eyebrow": "From the blog",
@@ -34,7 +34,7 @@
     "readMore": "Read more"
   },
   "footer": {
-    "tagline": "The second-hand book marketplace for readers who want to buy cheaper and sell easily.",
+    "tagline": "By readers, for readers. Librea is building the largest library in the world — one shared shelf at a time.",
     "emailLabel": "Stay in the loop",
     "emailSub": "Get updates on new features and launches.",
     "emailPlaceholder": "your@email.com",
@@ -51,47 +51,47 @@
   "testimonials": {
     "eyebrow": "What readers say",
     "heading": "Real people, real books.",
-    "q1": "I sold three books in a week and bought two more for almost nothing. The meetup was five minutes from my door.",
+    "q1": "I borrowed three books from neighbours I'd never met and lent out a dozen of my own. My shelf finally has a purpose.",
     "n1": "Laura M.",
-    "m1": "Bought 4 books on Librea",
-    "q2": "Finally a marketplace that makes sense for books. No shipping fees, no waiting — just people sharing what they love.",
+    "m1": "Librearian in Berlin",
+    "q2": "Finally something that treats books like a library, not a shop — just readers sharing what they love.",
     "n2": "Jonas R.",
-    "m2": "Sold 7 books on Librea",
-    "q3": "I found a copy of a book I'd been hunting for months, half a kilometre away. This app is magic.",
+    "m2": "Librearian since beta",
+    "q3": "I found a book I'd been hunting for months on a shelf half a kilometre away, and borrowed it the same day.",
     "n3": "Sophie K.",
-    "m3": "Librea user since beta",
-    "q4": "Listed my old university books in minutes and sold them the same day. Couldn't believe how easy it was.",
+    "m3": "Librearian in Vienna",
+    "q4": "I started a little book-sharing circle in my neighbourhood. There are forty of us now, all librearians.",
     "n4": "Anna M.",
-    "m4": "Sold 12 books on Librea"
+    "m4": "Started a community in Munich"
   },
   "features": {
-    "eyebrow": "Built for readers",
-    "heading": "Good books deserve\na second chapter.",
-    "description": "Librea is designed to make buying and selling second-hand books in your neighbourhood effortless.",
+    "eyebrow": "By readers, for readers",
+    "heading": "Your shelf is a\nlittle library.",
+    "description": "Librea makes it effortless to open up your shelf and share the books you love with readers around you.",
     "f1_title": "Discover books and readers in your area.",
     "f1_desc": "Browse what people nearby are reading and connect over shared taste.",
     "f2_title": "Scan books in seconds.",
-    "f2_desc": "Point your camera at the barcode and it's listed instantly — no typing needed.",
-    "f3_title": "Like them. Share them.",
-    "f3_desc": "Save the books you love and offer the ones gathering dust on your shelf.",
+    "f2_desc": "Point your camera at the barcode and it's on your shelf instantly — no typing needed.",
+    "f3_title": "Like them. Lend them.",
+    "f3_desc": "Save the books you love and lend out the ones on your shelf to the readers around you.",
     "f4_title": "Share your books with friends and locals.",
     "f4_desc": "Your shelf becomes a little library for everyone around you."
   },
   "hero": {
-    "eyebrow": "The book marketplace",
-    "heading": "Read More,\nPay Less",
-    "description": "Librea connects readers who want to pass on their books with those who want to get them cheap. Buy second-hand, sell with ease — a community built around the love of reading.",
+    "eyebrow": "By readers, for readers",
+    "heading": "Building the largest\nlibrary in the world",
+    "description": "Librea turns every reader into a librarian. Create your account, share your shelf with your network, and start a book-sharing community wherever you are.",
     "cta_ios": "Download on the App Store",
     "cta_android": "Android — Coming Soon"
   },
   "signupConfirmation": {
     "heading": "Your email is confirmed.",
-    "body": "Welcome to Librea. Download the app and start sharing books with people around you.",
+    "body": "Welcome, fellow librearian. Download the app, share your shelf, and help build the library with readers around you.",
     "back": "Back to homepage"
   },
   "modal": {
     "heading": "Get the Librea app",
-    "body": "Librea is now in public testing. Download the app and start sharing books with people around you."
+    "body": "Librea is now in public testing. Download the app, become a librearian, and start sharing your shelf with readers around you."
   },
   "support": {
     "eyebrow": "Support",
