@@ -18,12 +18,12 @@ const inter = Inter({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html suppressHydrationWarning>
+    <html className={`${inter.variable} ${libreBaskerville.variable}`} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/LibreaIcon.svg" type="image/svg+xml" />
       </head>
-      <body className={`${inter.variable} ${libreBaskerville.variable}`}>
+      <body>
         {children}
       </body>
     </html>

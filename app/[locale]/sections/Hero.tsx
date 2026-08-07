@@ -42,14 +42,12 @@ const TextCol = styled.div`
 
 const ImageCol = styled.div`
   grid-column: span 6;
-  order: -1;
   display: flex;
   align-items: flex-end;
   justify-content: center;
 
   @media (min-width: 768px) {
     grid-column: 7 / span 5;
-    order: 0;
   }
 `;
 
