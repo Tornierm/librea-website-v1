@@ -7,25 +7,23 @@
     "cta": "Get the App"
   },
   "meta": {
-    "title": "Librea - Building the largest library in the world",
-    "description": "By readers, for readers. Librea turns every reader into a librarian — share your shelf with your network and start a book-sharing community wherever you are."
-  },
-  "howItWorks": {
-    "eyebrow": "How it works",
-    "step1_label": "Find a book",
-    "step1_heading": "Browse shelves near you",
-    "step1_description": "Search by title, author, or genre and find books on the shelves of readers just around the corner.",
-    "step2_label": "Meet locally",
-    "step2_heading": "Agree on a spot, no shipping",
-    "step2_description": "Message the owner and pick a convenient meeting point. No packaging, no waiting.",
-    "step3_label": "Share & connect",
-    "step3_heading": "Grow the library together",
-    "step3_description": "Lend the books you love, borrow the ones you've been hunting, and start a book-sharing community wherever you are."
+    "title": "Librea — Join your local community library",
+    "description": "The books of the world are collecting dust on our bookshelves. Librea revives them, neighbourhood by neighbourhood."
   },
   "claim": {
-    "eyebrow": "Not a marketplace. A library.",
-    "heading": "Every reader becomes a librarian.",
-    "description": "This was never about cheap books — it's a community effort. Any book lover can create an account, share their library with their own network, and lend the books they love to the people around them."
+    "eyebrow": "Why join Librea?",
+    "heading": "Make reading affordable, sustainable and social.",
+    "description": "Become a Librea librarian. Skip the bookshop, meet your neighbour. Librea helps you save money and connect over the books we love — without a single tree falling."
+  },
+  "agreement": {
+    "eyebrow": "Our promise",
+    "heading": "No catch. Just books.",
+    "p1_title": "Free to use",
+    "p1_desc": "Download and use Librea for free.",
+    "p2_title": "Safe and private",
+    "p2_desc": "We never share your location, and reader ratings help you meet with confidence.",
+    "p3_title": "Effortless by design",
+    "p3_desc": "Only engage when you want to — no obligations, no pressure."
   },
   "blog": {
     "eyebrow": "From the blog",
@@ -65,22 +63,22 @@
     "m4": "Started a community in Munich"
   },
   "features": {
-    "eyebrow": "By readers, for readers",
-    "heading": "Your shelf is a\nlittle library.",
-    "description": "Librea makes it effortless to open up your shelf and share the books you love with readers around you.",
-    "f1_title": "Discover books and readers in your area.",
-    "f1_desc": "Browse what people nearby are reading and connect over shared taste.",
-    "f2_title": "Scan books in seconds.",
-    "f2_desc": "Point your camera at the barcode and it's on your shelf instantly — no typing needed.",
-    "f3_title": "Like them. Lend them.",
-    "f3_desc": "Save the books you love and lend out the ones on your shelf to the readers around you.",
-    "f4_title": "Share your books with friends and locals.",
-    "f4_desc": "Your shelf becomes a little library for everyone around you."
+    "eyebrow": "How it works",
+    "heading": "Four steps to get started.",
+    "description": "Here's how Librea turns your bookshelf into a shared library.",
+    "f1_title": "Scan in seconds.",
+    "f1_desc": "Scan the barcodes on your shelf and your whole library is catalogued for you — no typing.",
+    "f2_title": "Manage your library.",
+    "f2_desc": "Decide which books to lend, which to sell and which to keep for yourself.",
+    "f3_title": "Share with your network.",
+    "f3_desc": "Lend, sell, swap or gift your books to the friends and readers around you.",
+    "f4_title": "Meet local people over the books you love.",
+    "f4_desc": "Discover your next read and connect with a local over the stories you love."
   },
   "hero": {
     "eyebrow": "By readers, for readers",
-    "heading": "Building the largest\nlibrary in the world",
-    "description": "Librea turns every reader into a librarian. Create your account, share your shelf with your network, and start a book-sharing community wherever you are.",
+    "heading": "Build your local\ncommunity library",
+    "description": "The books of the world are collecting dust on our bookshelves. Librea revives them, neighbourhood by neighbourhood.",
     "cta_ios": "Download on the App Store",
     "cta_android": "Android — Coming Soon"
   },

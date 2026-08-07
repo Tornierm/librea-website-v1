@@ -7,25 +7,23 @@
     "cta": "App laden"
   },
   "meta": {
-    "title": "Librea - Wir bauen die größte Bibliothek der Welt",
-    "description": "Von Lesern, für Leser. Librea macht jeden Leser zum Bibliothekar — teile dein Regal mit deinem Netzwerk und starte eine Buch-Community, wo immer du bist."
-  },
-  "howItWorks": {
-    "eyebrow": "So funktioniert's",
-    "step1_label": "Buch finden",
-    "step1_heading": "Regale in deiner Nähe durchstöbern",
-    "step1_description": "Suche nach Titel, Autor oder Genre und finde Bücher in den Regalen von Lesern gleich um die Ecke.",
-    "step2_label": "Lokal treffen",
-    "step2_heading": "Treffpunkt vereinbaren, kein Versand",
-    "step2_description": "Schreib der Besitzerin oder dem Besitzer und wählt einen Treffpunkt. Kein Verpacken, kein Warten.",
-    "step3_label": "Teilen & verbinden",
-    "step3_heading": "Die Bibliothek gemeinsam wachsen lassen",
-    "step3_description": "Verleih die Bücher, die du liebst, leih dir die, die du suchst, und starte eine Buch-Community, wo immer du bist."
+    "title": "Librea — Werde Teil deiner Nachbarschaftsbibliothek",
+    "description": "Die Bücher der Welt verstauben in unseren Regalen. Librea erweckt sie wieder zum Leben — Nachbarschaft für Nachbarschaft."
   },
   "claim": {
-    "eyebrow": "Kein Marktplatz. Eine Bibliothek.",
-    "heading": "Jeder Leser wird zum Bibliothekar.",
-    "description": "Es ging nie um billige Bücher — es ist ein Gemeinschaftsprojekt. Jeder Buchliebhaber kann ein Konto erstellen, seine Bibliothek mit dem eigenen Netzwerk teilen und die Bücher, die er liebt, an die Menschen um sich herum verleihen."
+    "eyebrow": "Warum Librea?",
+    "heading": "Mach Lesen günstig, nachhaltig und sozial.",
+    "description": "Werde Librea-Bibliothekar. Spar dir den Buchladen, triff deine Nachbarn. Mit Librea sparst du Geld und verbindest dich über die Bücher, die wir lieben — ohne dass ein einziger Baum fällt."
+  },
+  "agreement": {
+    "eyebrow": "Unser Versprechen",
+    "heading": "Kein Haken. Nur Bücher.",
+    "p1_title": "Kostenlos nutzen",
+    "p1_desc": "Librea herunterladen und kostenlos nutzen.",
+    "p2_title": "Sicher und privat",
+    "p2_desc": "Wir teilen deinen Standort nie, und Nutzerbewertungen helfen dir, dich mit gutem Gefühl zu treffen.",
+    "p3_title": "Mühelos gemacht",
+    "p3_desc": "Mach nur mit, wenn du willst — keine Verpflichtungen, kein Druck."
   },
   "blog": {
     "eyebrow": "Aus dem Blog",
@@ -65,22 +63,22 @@
     "m4": "Hat eine Community in München gestartet"
   },
   "features": {
-    "eyebrow": "Von Lesern, für Leser",
-    "heading": "Dein Regal ist eine\nkleine Bibliothek.",
-    "description": "Mit Librea öffnest du dein Regal und teilst die Bücher, die du liebst, mühelos mit Lesern in deiner Nähe.",
-    "f1_title": "Entdecke Bücher und Leser in deiner Nähe.",
-    "f1_desc": "Sieh, was Menschen in deiner Umgebung gerade lesen, und verbindet euch über gemeinsame Vorlieben.",
-    "f2_title": "Bücher in Sekunden scannen.",
-    "f2_desc": "Kamera auf den Barcode richten — schon steht es in deinem Regal. Kein Tippen nötig.",
-    "f3_title": "Liken. Verleihen.",
-    "f3_desc": "Speichere Bücher, die du liebst, und verleih die aus deinem Regal an die Leser um dich herum.",
-    "f4_title": "Teile deine Bücher mit Freunden und Nachbarn.",
-    "f4_desc": "Dein Regal wird zu einer kleinen Bibliothek für alle in deiner Umgebung."
+    "eyebrow": "So funktioniert's",
+    "heading": "In vier Schritten startklar.",
+    "description": "So wird dein Bücherregal mit Librea zu einer geteilten Bibliothek.",
+    "f1_title": "In Sekunden gescannt.",
+    "f1_desc": "Scanne die Barcodes in deinem Regal und deine ganze Bibliothek wird für dich katalogisiert — ohne Tippen.",
+    "f2_title": "Verwalte deine Bibliothek.",
+    "f2_desc": "Entscheide, welche Bücher du verleihst, welche du verkaufst und welche du für dich behältst.",
+    "f3_title": "Teile mit deinem Netzwerk.",
+    "f3_desc": "Verleihe, verkaufe, tausche oder verschenke deine Bücher an die Freunde und Leser um dich herum.",
+    "f4_title": "Triff Menschen aus deiner Nähe über die Bücher, die du liebst.",
+    "f4_desc": "Entdecke dein nächstes Buch und verbinde dich mit jemandem aus der Nähe über die Geschichten, die du liebst."
   },
   "hero": {
     "eyebrow": "Von Lesern, für Leser",
-    "heading": "Wir bauen die größte\nBibliothek der Welt",
-    "description": "Librea macht jeden Leser zum Bibliothekar. Erstelle dein Konto, teile dein Regal mit deinem Netzwerk und starte eine Buch-Community, wo immer du bist.",
+    "heading": "Bau deine\nNachbarschaftsbibliothek",
+    "description": "Die Bücher der Welt verstauben in unseren Regalen. Librea erweckt sie wieder zum Leben — Nachbarschaft für Nachbarschaft.",
     "cta_ios": "Im App Store laden",
     "cta_android": "Android — Demnächst"
   },
