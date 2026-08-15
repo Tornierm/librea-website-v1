@@ -18,11 +18,11 @@ const INTERVAL = 5000;
 
 type ScreenKey = 'home' | 'map' | 'profile' | 'createBook';
 
-const SCREENS: { key: ScreenKey; src: string; zIndex: number }[] = [
-  { key: 'home',       src: '/home.PNG',                zIndex: 1 },
-  { key: 'map',        src: '/app-screen-profile.png',  zIndex: 2 },
-  { key: 'profile',    src: '/create_book.PNG',         zIndex: 3 },
-  { key: 'createBook', src: '/scanning.PNG',            zIndex: 4 },
+const SCREENS: { key: ScreenKey; src: string; alt: string; zIndex: number }[] = [
+  { key: 'home',       src: '/home.PNG',                alt: 'Librea app home screen with book listings nearby',       zIndex: 1 },
+  { key: 'map',        src: '/app-screen-profile.png',  alt: 'A reader profile in the Librea app',                      zIndex: 2 },
+  { key: 'profile',    src: '/create_book.PNG',         alt: 'Adding a book to your shelf in the Librea app',           zIndex: 3 },
+  { key: 'createBook', src: '/scanning.PNG',            alt: 'Scanning a book barcode to list it in the Librea app',    zIndex: 4 },
 ];
 
 function getScreenTransform(key: ScreenKey, active: number): string {
@@ -362,14 +362,14 @@ export function Features() {
         <PhoneCol>
           <PhoneWrap onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
             <ScreenViewport>
-              {SCREENS.map(({ key, src, zIndex }) => (
+              {SCREENS.map(({ key, src, alt, zIndex }) => (
                 <ScreenLayer
                   key={key}
                   $zIndex={zIndex}
                   $transform={getScreenTransform(key, active)}
                   $transition={getScreenTransition(key, active)}
                 >
-                  <Image src={src} alt="" fill sizes="220px" style={{ objectFit: 'cover' }} draggable={false} priority={key === 'home'} />
+                  <Image src={src} alt={alt} fill sizes="220px" style={{ objectFit: 'cover' }} draggable={false} priority={key === 'home'} />
                 </ScreenLayer>
               ))}
             </ScreenViewport>
